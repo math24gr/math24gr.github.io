@@ -1,0 +1,331 @@
+
+\documentclass[a4paper,10pt]{report}
+
+%\usepackage[landscape]{geometry}
+\usepackage[cm-default]{fontspec}
+\setromanfont{FreeSerif}
+\setsansfont{FreeSans}
+\setmonofont{FreeMono}
+\usepackage[utf8x]{inputenc}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{xgreek}
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\usepackage{ulem}
+\usepackage{color}
+\usepackage{verbatim}
+\usepackage{nopageno}
+\usepackage{graphicx}
+\usepackage{textpos}
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
+%\usepackage[colorgrid,texcoord]{eso-pic}
+\usepackage[outline]{contour}
+\usepackage{wrapfig}
+\usepackage{url}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{fancybox,fancyhdr}
+\usepackage{subfigure}
+\usepackage{pstricks}
+\usepackage{epsfig}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\hypersetup{
+  bookmarks=true,
+  bookmarksopen=true,
+  pdfborder=false,
+  pdfpagemode=UseNone,
+  raiselinks=true,
+  pdfhighlight={/P},
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=black
+}
+
+
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+
+
+% Margins
+%\setlength{\textwidth}{24cm}
+
+%\setlength{\voffset}{0in}
+%\setlength{\textheight}{6.8in}
+% Colors
+\definecolor{cbrown}{rgb}{0.49,0.24,0.07}
+\definecolor{cmpez}{rgb}{0.92,0.88,0.79}
+\definecolor{cmpez2}{rgb}{0.62,0.33,0.34}
+\definecolor{cwhite}{rgb}{1,1,1}
+\definecolor{cblack}{rgb}{0,0,0}
+\definecolor{cred}{rgb}{0.9,0.15,0.15}
+\definecolor{clblue}{rgb}{0.57,0.85,0.97}
+\definecolor{corange}{rgb}{0.86,0.49,0.18}
+\definecolor{clorange}{rgb}{0.95,0.84,0.61}
+\definecolor{cyellow}{rgb}{1,0.95,0.16}
+\definecolor{cgreen}{rgb}{0.69,0.8,0.31}
+\definecolor{clbrown}{rgb}{0.78,0.67,0.43}
+\definecolor{cmagenta}{rgb}{0.79,0.05,0.54}
+\definecolor{cgray}{rgb}{0.76,0.73,0.63}
+\definecolor{bluesite}{rgb}{0.05,0.43,0.67}
+\definecolor{redsite}{rgb}{0.90,0.15,0.15}
+\definecolor{backsite}{rgb}{0.07,0.07,0.07}
+% ----------- from Costas -----------------------------
+
+%---------------   Main Fonts    -----------------%   
+
+% \setmainfont[Mapping=tex-text]{Calibri}
+% \setmainfont[Mapping=tex-text]{Times New Roman}
+%\setmainfont[Mapping=tex-text]{Droid Serif}
+%\setmainfont[Mapping=tex-text]{Cambria}
+%\setmainfont[Mapping=tex-text]{cm-unicode}
+% \setmainfont[Mapping=tex-text]{Gentium}
+% \setmainfont[Mapping=tex-text]{GFS Didot}
+% \setmainfont[Mapping=tex-text]{Comic Sans MS}
+ \setmainfont[Mapping=tex-text]{Ubuntu}
+% \setmainfont[Mapping=tex-text]{Myriad Pro}
+% \setmainfont[Mapping=tex-text]{CMU Concrete}
+%\setmainfont[Mapping=tex-text]{DejaVu Sans}
+%\setmainfont[Mapping=tex-text]{KerkisSans}
+%\setmainfont[Mapping=tex-text]{KerkisCaligraphic}
+% \setmainfont[Mapping=tex-text]{Segoe Print}
+% \setmainfont[Mapping=tex-text]{Gabriola}
+
+%------------------------------------------------%
+
+% ------------ Mathematics Fonts ----------------%
+\setmathfont{Asana-Math.ttf}
+% -----------------------------------------------%
+% Misc
+\author{Κασωτάκη Ε. - Σμαραγδάκης Κ.}
+\title{www.math24.gr}
+% ---------------- Formation --------------------%
+
+
+\setlength\topmargin{-0.7cm}
+\addtolength\topmargin{-\headheight}
+\addtolength\topmargin{-\headsep}
+\setlength\textheight{26cm}
+\setlength\oddsidemargin{-0.54cm}
+\setlength\evensidemargin{-0.54cm}
+%\setlength\marginparwidth{1.5in}
+\setlength\textwidth{17cm}
+
+\RequirePackage[avantgarde]{quotchap}
+\renewcommand\chapterheadstartvskip{\vspace*{0\baselineskip}}
+\RequirePackage[calcwidth]{titlesec}
+\titleformat{\section}[hang]{\bfseries}
+{\Large\thesection}{12pt}{\Large}[{\titlerule[0.9pt]}]
+%--------------------------------------------------%
+\usepackage{draftwatermark}
+\SetWatermarkText{www.math24.gr}
+\SetWatermarkLightness{0.9}
+\SetWatermarkScale{0.6}
+%--------------------------------------------------%
+
+
+\usepackage{xcolor}
+\usepackage{amsthm}
+\usepackage{framed}
+\usepackage{parskip}
+
+\colorlet{shadecolor}{bluesite!20}
+
+\newtheorem*{orismos}{Ορισμός}
+
+\newenvironment{notation}
+  {\begin{shaded}\begin{theorem}}
+  {\end{theorem}\end{shaded}}
+
+
+
+
+% Document begins
+\begin{document}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\fancyhead[LO,LE]{
+ %\textblockcolor{backsite}
+ %\begin{textblock}{5}(-2,-0.55)
+  %\rule{0cm}{1cm}
+ %\end{textblock}
+ \textblockcolor{bluesite}
+ \begin{textblock}{5}(-1.5,-0.55)
+  \rule{0cm}{1cm}
+ \end{textblock}
+ %\textblockcolor{bluesite}
+ %\begin{textblock}{14}(5.5,-0.55)
+ % \rule{0cm}{1cm}
+ %\end{textblock}
+ \begin{textblock}{0}(-1,-0.25)
+ \color{cwhite} \begin{Large}www.math24.gr\end{Large}
+ \end{textblock}
+\begin{textblock}{0}(16,-0.4)
+ \color{cwhite} \includegraphics[height=1.5cm]{math24_logo.png}
+ \end{textblock}
+\textblockcolor{white}
+\begin{textblock}{17}(-1,28)
+ \color{backsite} \begin{small}Copyright \textcopyright 2011, Κασωτάκη Ε.(ikasotaki@gmail.com) - Σμαραγδάκης Κ.(kesmarag@gmail.com)\end{small}
+ \end{textblock}
+}
+ 
+\begin{shaded}
+\begin{center}
+\huge \textbf{Φυλλάδιο Ασκήσεων}\\
+%Πρόσθεση ρητών αριθμών
+\end{center} 
+\textbf{Μαθηματικά Α' Γυμνασίου} \hfill \textbf{Ημερομηνία Παράδοσης : \hspace{2em} }
+\subsection*{Ονοματεπώνυμο :\hfill  \hspace{5em}}
+\end{shaded}
+\vspace{2em}
+\begin{itemize}
+ \item Ισοδύναμα κλάσματα 
+ \item Απλοποίηση κλάσματος - Μετατροπή κλάσματος σε ανάγωγο κλάσμα
+ \item Ομώνυμα κλάσματα - Ετερώνυμα κλάσματα - Μετατροπή κλασμάτων σε ομώνυμα
+\end{itemize}
+\section*{Θεωρία - Ισοδύναμα Κλάσματα\hfill \small{}}
+\begin{itemize}
+ \item \textbf{Ισοδύναμα κλάσματα:} \\
+        Δύο κλάσματα $\dfrac{α}{β}$ και $\dfrac{γ}{δ}$ λέγονται ισοδύναμα 
+        όταν εκφράζουν το ίδιο τμήμα ενός μεγέθους ή ίσων μεγεθών.
+ \item \textbf{ Κανόνας:} \\
+      \textbf{Αν} δύο κλάσματα $\dfrac{α}{β}$ και $\dfrac{γ}{δ}$ είναι ισοδύναμα \textbf{τότε} τα "χιαστί γινόμενα" 
+      $α\cdot δ$ και $β\cdot γ$ είναι ίσα.\\
+      Δηλαδή: \textbf{Αν} $\dfrac{α}{β}=\dfrac{γ}{δ}$ \textbf{τότε} $α\cdot δ=β\cdot γ$ 
+ \item \textbf{Πώς εξετάζουμε αν 2 κλάσματα είναι ισοδύναμα:}\\
+       Για να εξετάσουμε αν 2 κλάσματα είναι ισοδύναμα, υπολογίζουμε τα "χιαστί γινόμενα" και 
+       \begin{itemize}
+        \item 1η περίπτωση: \textbf{αν} είναι ίσα \textbf{τότε} τα κλάσματα είναι ισοδύναμα
+        \item 2η περίπτωση: \textbf{αν} δεν είναι ίσα \textbf{τότε} τα κλάσματα δεν είναι ισοδύναμα
+       \end{itemize}
+       \textbf{Παράδειγμα:} Είναι τα κλάσματα $\dfrac{1}{2}$ και $\dfrac{2}{4}$  ισοδύναμα;\\
+       Υπολογίζουμε τα "χιαστί γινόμενα" $1\cdot4=4$ και $2\cdot2=4$. Αφού τα "χιαστί γινόμενα" είναι ίσα, άρα και τα 
+      κλάσματα είναι ισοδύναμα.\\
+     \textbf{Παράδειγμα:} Είναι τα κλάσματα $\dfrac{1}{3}$ και $\dfrac{3}{5}$  ισοδύναμα;\\
+       Υπολογίζουμε τα "χιαστί γινόμενα" $1\cdot5=5$ και $3\cdot3=$. Αφού τα "χιαστί γινόμενα" δεν είναι ίσα, άρα τα 
+      κλάσματα δεν είναι ισοδύναμα.
+
+\end{itemize}
+
+
+\section*{Άσκηση 1  (Ισοδύναμα Κλάσματα)\hfill \small{5 μονάδες}}
+Να εξετάσετε αν τα παρακάτω κλάσματα είναι ισοδύναμα:
+\begin{enumerate}[i)]
+ \item $\dfrac{12}{20}$ και $\dfrac{3}{5}$
+ \item $\dfrac{4}{8}$ και $\dfrac{8}{16}$
+ \item $\dfrac{7}{3}$ και $\dfrac{21}{8}$
+ \item $\dfrac{30}{60}$ και $\dfrac{20}{30}$
+ \item $\dfrac{22}{2}$ και $\dfrac{44}{4}$
+\end{enumerate}
+
+\section*{Θεωρία - Απλοποίηση κλάσματος - Μετατροπή κλάσματος σε ανάγωγο \hfill \small{}}
+\textbf{Κανόνας}: \\
+Όταν οι όροι ενός κλάσματος πολλαπλασιαστούν ή διαιρεθούν με τον ίδιο φυσικό αριθμό $\neq0$ 
+τότε προκύπτει ισοδύναμο κλάσμα.\\ \\
+\textbf{Απλοποίηση Κλάσματος} \\
+Απλοποίηση ενός κλάσματος ονομάζεται η διαδικασία κατά την οποία οι όροι ενός κλάσματος διαιρούνται με τον ίδιο φυσικό 
+αριθμό $\neq0$ και προκύπτει ένα κλάσμα ισοδύναμο με το αρχικό με μικρότερους όρους.\\ \\
+\textbf{Ανάγωγο κλάσμα} \\
+Ανάγωγο ονομάζεται το κλάσμα εκείνο που δεν μπορεί να απλοποιηθεί (δηλαδή δεν υπάρχει κοινός διαιρέτης αριθμητή 
+και παρονομαστή).\\ \\
+\textbf{Μεθοδολογία απλοποίησης κλασμάτων - Μετατροπή κλάσματος σε ανάγωγο κλάσμα} \\
+Όταν μας ζητάνε ν' απλοποιήσουμε ένα κλάσμα αυτό σημαίνει ότι πρέπει να το μετατρέψουμε σε ανάγωγο κλάσμα. 
+Για να μετατρέψουμε ένα κλάσμα σε ανάγωγο διαιρούμε τους όρους του κλάσματος με το μέγιστο κοινό διαιρέτη τους, 
+οπότε το κλάσμα που προκύπτει είναι ανάγωγο.
+\begin{itemize}
+ \item \textbf{π.χ} Για να απλοποιήσουμε το κλάσμα $\dfrac{10}{20}$ βρίσκουμε ότι $ΜΚΔ(10,20)=10$ οπότε 
+$\dfrac{10}{20}=\dfrac{10:10}{20:10}=\dfrac{1}{2}$
+\end{itemize}
+
+
+
+
+\section*{Άσκηση 2 (Μετατροπή κλάσματος σε ανάγωγο ) \hfill \small{5 μονάδες}}
+Να απλοποιήσετε τα παρακάτω κλάσματα:
+\begin{enumerate}[i)]
+ \item $\dfrac{13}{26}$
+ \item $\dfrac{24}{9}$
+ \item $\dfrac{15}{18}$
+ \item $\dfrac{14}{21}$
+ \item $\dfrac{8}{32}$
+\end{enumerate}
+
+\section*{Άσκηση 3 (Ανάγωγα Κλάσματα ) \hfill \small{5 μονάδες}}
+Να βρείτε ποια από τα παραπάνω κλάσματα είναι ανάγωγα:
+\begin{enumerate}[i)]
+ \item  $\dfrac{12}{24}$
+ \item  $\dfrac{3}{5}$
+ \item  $\dfrac{11}{7}$
+ \item  $\dfrac{13}{14}$
+ \item  $\dfrac{5}{15}$
+\end{enumerate}
+
+
+
+\section*{Θεωρία - Ομώνυμα και Ετερώνυμα Κλάσματα\hfill \small{}}
+\textbf{Ομώνυμα}: \\
+Ομώνυμα ονομάζονται δύο ή περισσότερα κλάσματα τα οποία έχουν τον ίδιο παρονομαστή. \\
+\textbf{π.χ} τα κλάσματα $\dfrac{2}{5},\dfrac{4}{5},\dfrac{7}{5}$ είναι ομώνυμα \\ \\
+\textbf{Ετερώνυμα}: \\
+Ετερώνυμα ονομάζονται δύο ή περισσότερα κλάσματα τα οποία έχουν διαφορετικό παρονομαστή. \\
+\textbf{π.χ} τα κλάσματα $\dfrac{1}{3},\dfrac{2}{5},\dfrac{2}{7}$ είναι ετερώνυμα \\ \\
+\textbf{Μετατροπή κλασμάτων σε ομώνυμα}: \\
+Για να μετατρέψουμε δύο ή περισσότερα κλάσματα σε ομώνυμα εκτελούμε τα παρακάτω βήματα:
+\begin{itemize}
+ \item \textbf{1ο Βήμα} Ελέγχουμε αν τα ετερώνυμα κλάσματα απλοποιούνται και αν ναι τα μετατρέπουμε σε ανάγωγα.
+ \item \textbf{2ο Βήμα} Βρίσκουμε το $ΕΚΠ$ των παρονομαστών των ανάγωγων ετερώνυμων κλασμάτων.
+ \item \textbf{3ο Βήμα} Διαιρούμε το $ΕΚΠ$ που βρήκαμε με καθένα από τους παρονομαστές.
+ \item \textbf{4ο Βήμα} Πολλαπλασιάζουμε τον αριθμητή και τον παρονομαστή κάθε κλάσματος επί τον αντίστοιχο αριθμό που 
+                        βρήκαμε και έτσι τα κλάσματα μετατρέπονται σε ισοδύναμα ομώνυμα.
+\end{itemize}
+%------------------------------------------------------------------------------------------
+\vspace{2em}
+\textbf{Παράδειγμα:} \\
+Μετατροπή των κλασμάτων $\dfrac{3}{2},\dfrac{5}{3}$ και $\dfrac{14}{12} $ σε ομώνυμα
+\begin{itemize}
+ \item \textbf{1ο Βήμα} Το κλάσμα $\dfrac{3}{2}$ είναι ανάγωγο αφού $ΜΚΔ(3,2)=1$\\
+                        Το κλάσμα $\dfrac{5}{3}$ είναι ανάγωγο αφού $ΜΚΔ(5,3)=1$\\
+                        Το κλάσμα $\dfrac{14}{12}$ δεν είναι ανάγωγο αφού $ΜΚΔ(14,12)=2$ οπότε 
+                        το μετατρέπουμε σε ανάγωγο\\
+                         $\dfrac{14}{12}=\dfrac{14:2}{12:2}=\dfrac{7}{6}$
+ \item \textbf{2ο Βήμα} Τώρα τα κλάσματα είναι $\dfrac{3}{2},\dfrac{5}{3}$ και $\dfrac{7}{6} $ \\
+                        Βρίσκουμε το $ΕΚΠ$ των παρονομαστών: $ΕΚΠ(2,3,6)=6$\\
+ \item \textbf{3ο Βήμα} \\Για το κλάσμα $\dfrac{3}{2}$ έχουμε $6:2=3$\\
+                        Για το κλάσμα $\dfrac{5}{3}$ έχουμε $6:3=2$\\
+                        Για το κλάσμα $\dfrac{7}{6}$ έχουμε $6:6=1$
+ \item \textbf{4ο Βήμα} \\ $\dfrac{3}{2}=\dfrac{3\cdot3}{2\cdot3}=\dfrac{9}{6}$\\
+                         $\dfrac{5}{3}=\dfrac{5\cdot2}{3\cdot2}=\dfrac{10}{6}$\\
+                         $\dfrac{7}{6}=\dfrac{7\cdot1}{6\cdot1}=\dfrac{7}{6}$\\
+\end{itemize}
+%------------------------------------------------------------------------------------------
+
+
+\section*{Άσκηση 4 (Μετατροπή κλασμάτων σε ομώνυμα) \hfill \small{5 μονάδες}}
+Να μετατρέψετε τα παρακάτω κλάσματα σε ομώνυμα
+\begin{enumerate}[i)]
+ \item $\dfrac{4}{6}$ και $\dfrac{5}{4}$
+ \item $\dfrac{5}{2}$ και $\dfrac{3}{4}$
+ \item $\dfrac{7}{14}$ και $\dfrac{8}{6}$
+ \item $\dfrac{1}{5}$ και $\dfrac{4}{20}$
+ \item $\dfrac{1}{2}$,$\dfrac{1}{3}$     και $\dfrac{1}{4}$
+\end{enumerate}
+
+
+
+
+
+
+\end{document}

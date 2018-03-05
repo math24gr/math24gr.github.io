@@ -1,0 +1,363 @@
+
+\documentclass[a4paper,10pt]{report}
+
+%\usepackage[landscape]{geometry}
+\usepackage[cm-default]{fontspec}
+\setromanfont{FreeSerif}
+\setsansfont{FreeSans}
+\setmonofont{FreeMono}
+\usepackage[utf8x]{inputenc}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{xgreek}
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\usepackage{ulem}
+\usepackage{color}
+\usepackage{verbatim}
+\usepackage{nopageno}
+\usepackage{graphicx}
+\usepackage{textpos}
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
+%\usepackage[colorgrid,texcoord]{eso-pic}
+\usepackage[outline]{contour}
+\usepackage{wrapfig}
+\usepackage{url}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{fancybox,fancyhdr}
+\usepackage{subfigure}
+\usepackage{pstricks}
+\usepackage{epsfig}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\hypersetup{
+  bookmarks=true,
+  bookmarksopen=true,
+  pdfborder=false,
+  pdfpagemode=UseNone,
+  raiselinks=true,
+  pdfhighlight={/P},
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=black
+}
+
+
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+
+
+% Margins
+%\setlength{\textwidth}{24cm}
+
+%\setlength{\voffset}{0in}
+%\setlength{\textheight}{6.8in}
+% Colors
+\definecolor{cbrown}{rgb}{0.49,0.24,0.07}
+\definecolor{cmpez}{rgb}{0.92,0.88,0.79}
+\definecolor{cmpez2}{rgb}{0.62,0.33,0.34}
+\definecolor{cwhite}{rgb}{1,1,1}
+\definecolor{cblack}{rgb}{0,0,0}
+\definecolor{cred}{rgb}{0.9,0.15,0.15}
+\definecolor{clblue}{rgb}{0.57,0.85,0.97}
+\definecolor{corange}{rgb}{0.86,0.49,0.18}
+\definecolor{clorange}{rgb}{0.95,0.84,0.61}
+\definecolor{cyellow}{rgb}{1,0.95,0.16}
+\definecolor{cgreen}{rgb}{0.69,0.8,0.31}
+\definecolor{clbrown}{rgb}{0.78,0.67,0.43}
+\definecolor{cmagenta}{rgb}{0.79,0.05,0.54}
+\definecolor{cgray}{rgb}{0.76,0.73,0.63}
+\definecolor{bluesite}{rgb}{0.05,0.43,0.67}
+\definecolor{redsite}{rgb}{0.90,0.15,0.15}
+\definecolor{backsite}{rgb}{0.07,0.07,0.07}
+% ----------- from Costas -----------------------------
+
+%---------------   Main Fonts    -----------------%   
+
+% \setmainfont[Mapping=tex-text]{Calibri}
+% \setmainfont[Mapping=tex-text]{Times New Roman}
+%\setmainfont[Mapping=tex-text]{Droid Serif}
+%\setmainfont[Mapping=tex-text]{Cambria}
+%\setmainfont[Mapping=tex-text]{cm-unicode}
+% \setmainfont[Mapping=tex-text]{Gentium}
+% \setmainfont[Mapping=tex-text]{GFS Didot}
+% \setmainfont[Mapping=tex-text]{Comic Sans MS}
+ \setmainfont[Mapping=tex-text]{Ubuntu}
+% \setmainfont[Mapping=tex-text]{Myriad Pro}
+% \setmainfont[Mapping=tex-text]{CMU Concrete}
+%\setmainfont[Mapping=tex-text]{DejaVu Sans}
+%\setmainfont[Mapping=tex-text]{KerkisSans}
+%\setmainfont[Mapping=tex-text]{KerkisCaligraphic}
+% \setmainfont[Mapping=tex-text]{Segoe Print}
+% \setmainfont[Mapping=tex-text]{Gabriola}
+
+%------------------------------------------------%
+
+% ------------ Mathematics Fonts ----------------%
+\setmathfont{Asana-Math.ttf}
+% -----------------------------------------------%
+% Misc
+\author{Κασωτάκη Ε. - Σμαραγδάκης Κ.}
+\title{www.math24.gr}
+% ---------------- Formation --------------------%
+
+
+\setlength\topmargin{-0.7cm}
+\addtolength\topmargin{-\headheight}
+\addtolength\topmargin{-\headsep}
+\setlength\textheight{26cm}
+\setlength\oddsidemargin{-0.54cm}
+\setlength\evensidemargin{-0.54cm}
+%\setlength\marginparwidth{1.5in}
+\setlength\textwidth{17cm}
+
+\RequirePackage[avantgarde]{quotchap}
+\renewcommand\chapterheadstartvskip{\vspace*{0\baselineskip}}
+\RequirePackage[calcwidth]{titlesec}
+\titleformat{\section}[hang]{\bfseries}
+{\Large\thesection}{12pt}{\Large}[{\titlerule[0.9pt]}]
+%--------------------------------------------------%
+\usepackage{draftwatermark}
+\SetWatermarkText{www.math24.gr}
+\SetWatermarkLightness{0.9}
+\SetWatermarkScale{0.6}
+%--------------------------------------------------%
+
+
+\usepackage{xcolor}
+\usepackage{amsthm}
+\usepackage{framed}
+\usepackage{parskip}
+
+\colorlet{shadecolor}{bluesite!20}
+
+\newtheorem*{orismos}{Ορισμός}
+
+\newenvironment{notation}
+  {\begin{shaded}\begin{theorem}}
+  {\end{theorem}\end{shaded}}
+
+
+
+
+% Document begins
+\begin{document}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\fancyhead[LO,LE]{
+ %\textblockcolor{backsite}
+ %\begin{textblock}{5}(-2,-0.55)
+  %\rule{0cm}{1cm}
+ %\end{textblock}
+ \textblockcolor{bluesite}
+ \begin{textblock}{5}(-1.5,-0.55)
+  \rule{0cm}{1cm}
+ \end{textblock}
+ %\textblockcolor{bluesite}
+ %\begin{textblock}{14}(5.5,-0.55)
+ % \rule{0cm}{1cm}
+ %\end{textblock}
+ \begin{textblock}{0}(-1,-0.25)
+ \color{cwhite} \begin{Large}www.math24.gr\end{Large}
+ \end{textblock}
+\begin{textblock}{0}(16,-0.4)
+ \color{cwhite} \includegraphics[height=1.5cm]{math24_logo.png}
+ \end{textblock}
+\textblockcolor{white}
+\begin{textblock}{17}(-1,28)
+ \color{backsite} \begin{small}Copyright \textcopyright 2012, Κασωτάκη Ε.(ikasotaki@gmail.com) - Σμαραγδάκης Κ.(kesmarag@gmail.com)\end{small}
+ \end{textblock}
+}
+ 
+\begin{shaded}
+\begin{center}
+\huge \textbf{Φυλλάδιο Ασκήσεων}\\
+%Πρόσθεση ρητών αριθμών
+\end{center} 
+\textbf{Μαθηματικά Α' Γυμνασίου} \hfill \textbf{Ημερομηνία Παράδοσης : \hspace{2em} }
+\subsection*{Ονοματεπώνυμο :\hfill  \hspace{5em}}
+\end{shaded}
+\vspace{2em}
+\begin{itemize}
+ \item Γινόμενο κλασμάτων
+ \item Γινόμενο φυσικού αριθμού επί ένα κλάσμα
+ \item Αντίστροφοι αριθμοί
+\end{itemize}
+
+
+\section*{Θεωρία - Γινόμενο κλασμάτων\hfill \small{}}
+\textbf{Το γινόμενο δύο (ή περισσότερων) κλασμάτων} είναι το κλάσμα που έχει αριθμητή το 
+γινόμενο των αριθμητών και παρονομαστή το γινόμενο των παρονομαστών.  \\
+Δηλαδή $\dfrac{α}{β} \cdot \dfrac{γ}{δ} = \dfrac{α \cdot γ}{β \cdot δ}$\\
+\textbf{π.χ} $\dfrac{2}{3} \cdot \dfrac{7}{5} = \dfrac{2 \cdot 7}{3 \cdot 5} = \dfrac{14}{15}$
+
+
+
+\section*{Άσκηση 1  \hfill \small{30 μονάδες}}
+Να υπολογίσετε τα παρακάτω γινόμενα και να απλοποιήσετε το αποτέλεσμα αν το κλάσμα 
+που έχει προκύψει δεν είναι ανάγωγο.
+\begin{enumerate}[1)]
+\begin{multicols}{2}
+ \item $\dfrac{3}{5} \cdot \dfrac{4}{7}$
+ \item $\dfrac{2}{7} \cdot \dfrac{3}{4}$
+ \item $\dfrac{5}{10} \cdot \dfrac{20}{3}$
+ \item $\dfrac{8}{30} \cdot \dfrac{100}{3}$
+ \item $\dfrac{14}{25} \cdot \dfrac{35}{2}$
+ \item $\dfrac{1}{2} \cdot \dfrac{3}{4}\cdot \dfrac{5}{3}$
+ \item $\dfrac{1}{2} \cdot \dfrac{1}{4} \cdot \dfrac{1}{5}$
+ \item $\dfrac{2}{3} \cdot \dfrac{4}{5} \cdot \dfrac{5}{7}$
+ \item $\dfrac{2}{20} \cdot \dfrac{5}{3} \cdot \dfrac{10}{4}$
+ \item $\dfrac{2}{7} \cdot \dfrac{6}{2} \cdot \dfrac{14}{3}$
+\end{multicols}
+\end{enumerate}
+
+
+\section*{Θεωρία - Γινόμενο φυσικού αριθμού επί κλάσμα\hfill \small{}}
+\textbf{Το γινόμενο ενός αριθμού επί ένα κλάσμα} είναι το κλάσμα το οποίο έχει αριθμητή 
+το γινόμενο του φυσικού αριθμού επί τον αριθμητή και παρονομαστή τον ίδιο.\\
+Δηλαδή $λ \cdot \dfrac{α}{β} = \dfrac{λ\cdot α}{β}$\\
+\textbf{π.χ} $ 3 \cdot \dfrac{4}{11} = \dfrac{3\cdot 4}{11} = \dfrac{12}{11}$
+
+
+
+\section*{Άσκηση 2  \hfill \small{30 μονάδες}}
+Να υπολογίσετε τα παρακάτω γινόμενα και να απλοποιήσετε το αποτέλεσμα αν το κλάσμα 
+που έχει προκύψει δεν είναι ανάγωγο.
+\begin{enumerate}[1)]
+\begin{multicols}{2}
+ \item $3\cdot \dfrac{5}{7}$
+ \item $6\cdot \dfrac{2}{9}$
+ \item $5\cdot \dfrac{5}{20}$
+ \item $6\cdot \dfrac{1}{42}$
+ \item $7\cdot \dfrac{2}{15}$
+ \item $\dfrac{2}{5} \cdot 9$
+ \item $\dfrac{3}{6} \cdot 6$
+ \item $\dfrac{1}{11} \cdot 41 $
+ \item $\dfrac{5}{32} \cdot 8$
+ \item $\dfrac{2}{24} \cdot 17$
+\end{multicols}
+\end{enumerate}
+
+\section*{Θεωρία - Αφαίρεση ομώνυμων κλασμάτων\hfill \small{}}
+Η αφαίρεση δύο ομώνυμων κλασμάτων μας δίνει ένα κλάσμα που έχει τον ίδιο παρονομαστή με τα αρχικά 
+κλάσματα και για παρονομαστή έχει τη διαφορά των αριθμητών τους.  \\
+\textbf{π.χ} $\dfrac{5}{3}-\dfrac{2}{3}=\dfrac{5-2}{3}=\dfrac{3}{3}=1$\\
+\textbf{π.χ} $\dfrac{7}{13}-\dfrac{6}{13}=\dfrac{7-6}{13}=\dfrac{1}{13}$
+
+
+
+\section*{Άσκηση 3  \hfill \small{10 μονάδες}}
+Να υπολογίσετε τις παρακάτω διαφορές  και να απλοποιήσετε το αποτέλεσμα όπου αυτό δεν είναι  ανάγωγο κλάσμα.
+\begin{enumerate}[1)]
+\begin{multicols}{2}
+ \item $\dfrac{7}{2}-\dfrac{6}{2}$
+ \item $\dfrac{8}{3}-\dfrac{5}{3}$
+ \item $\dfrac{10}{4}-\dfrac{2}{4}$
+ \item $\dfrac{20}{10}-\dfrac{5}{10}$
+ \item $\dfrac{18}{6}-\dfrac{15}{6}$
+ \item $\dfrac{32}{24}-\dfrac{20}{24}$
+ \item $\dfrac{6}{5}-\dfrac{4}{5}$
+ \item $\dfrac{9}{7}-\dfrac{1}{7}$
+ \item $\dfrac{100}{40}-\dfrac{20}{40}$
+ \item $\dfrac{52}{71}-\dfrac{30}{71}$
+\end{multicols}
+\end{enumerate}
+
+
+\section*{Θεωρία - Αφαίρεση ετερώνυμων κλασμάτων\hfill \small{}}
+Για να αφαιρέσουμε δύο ετερώνυμα κλάσματα πρέπει πρώτα να τα μετατρέψουμε σε ομώνυμα. \\
+\textbf{π.χ} $\dfrac{17}{10}-\dfrac{2}{5}=\dfrac{17}{10}-\dfrac{4}{10}=\dfrac{17-4}{10}=\dfrac{3}{10}$\\
+\textbf{π.χ} $\dfrac{9}{2}-\dfrac{2}{3}=\dfrac{27}{6}-\dfrac{4}{6}=\dfrac{27-4}{6}=\dfrac{23}{6}$
+
+
+
+\section*{Άσκηση 4  \hfill \small{10 μονάδες}}
+Να υπολογίσετε τις παρακάτω διαφορές  και να απλοποιήσετε το αποτέλεσμα όπου αυτό δεν είναι  ανάγωγο κλάσμα.
+\begin{enumerate}[1)]
+\begin{multicols}{2}
+ \item $\dfrac{19}{6}-\dfrac{4}{3}$
+ \item $\dfrac{30}{6}-\dfrac{5}{2}$
+ \item $\dfrac{14}{4}-\dfrac{7}{2}$
+ \item $\dfrac{8}{42}-\dfrac{1}{21}$
+ \item $\dfrac{3}{4}-\dfrac{1}{5}$
+ \item $\dfrac{6}{4}-\dfrac{4}{3}$
+ \item $\dfrac{5}{3}-\dfrac{3}{5}$
+ \item $\dfrac{2}{6}-\dfrac{3}{12}$
+ \item $\dfrac{9}{3}-\dfrac{2}{7}$
+ \item $\dfrac{4}{20}-\dfrac{1}{30}$
+\end{multicols}
+\end{enumerate}
+
+\section*{Θεωρία - Μεικτός αριθμός\hfill \small{}}
+\textbf{Μεικτός αριθμός} ονομάζεται το άθροισμα ενός ακέραιου αριθμού με ένα κλάσμα μικρότερο της μονάδας. \\
+\textbf{π.χ} ο μεικτός αριθμός $1\dfrac{3}{4}$ σημαίνει $1+\dfrac{3}{4}$\\
+\textbf{π.χ} ο μεικτός αριθμός $2\dfrac{6}{11}$ σημαίνει $2+\dfrac{6}{11}$
+\begin{itemize}
+ \item \textbf{Παράδειγμα} - Μετατροπή ενός κλάσματος μεγαλύτερου της μονάδας σε μεικτό αριθμό\\
+       Αν θέλουμε να μετατρέψουμε το κλάσμα $\dfrac{17}{3}$ σε μεικτό αριθμό \\εκτελούμε την 
+       ευκλείδεια διαίρεση $17=3\cdot 5+2$ \\και έχουμε: 
+       $\dfrac{17}{3}=\dfrac{3\cdot 5}{3}+\dfrac{2}{3}=5+\dfrac{2}{3}=5\dfrac{2}{3}$
+ \item \textbf{Παράδειγμα} - Μετατροπή ενός μεικτού αριθμού σε κλάσμα\\
+        $5\dfrac{2}{3}=5+\dfrac{2}{3}=\dfrac{15}{3}+\dfrac{2}{3}=\dfrac{17}{3}$
+\end{itemize}
+
+\section*{Άσκηση 5  \hfill \small{20 μονάδες}}
+Να μετατρέψετε τα παρακάτω κλάσματα σε μεικτούς αριθμούς:
+\begin{enumerate}[1)]
+\begin{multicols}{2}
+ \item $\dfrac{19}{4}$
+ \item $\dfrac{25}{3}$
+ \item $\dfrac{49}{5}$
+ \item $\dfrac{7}{2}$
+ \item $\dfrac{14}{3}$
+ \item $\dfrac{27}{8}$
+ \item $\dfrac{19}{7}$
+ \item $\dfrac{33}{6}$
+ \item $\dfrac{29}{5}$
+ \item $\dfrac{33}{10}$
+\end{multicols}
+\end{enumerate}
+
+\newpage
+\section*{Άσκηση 6  \hfill \small{20 μονάδες}}
+Να μετατρέψετε τους παρακάτω μεικτούς αριθμούς σε κλάσματα
+\begin{enumerate}[1)]
+\begin{multicols}{2}
+ \item $3\dfrac{7}{8}$
+ \item $4\dfrac{1}{5}$
+ \item $6\dfrac{3}{5}$
+ \item $1\dfrac{2}{7}$
+ \item $2\dfrac{3}{4}$
+ \item $3\dfrac{2}{3}$
+ \item $1\dfrac{9}{10}$
+ \item $1\dfrac{6}{7}$
+ \item $1\dfrac{2}{9}$
+ \item $2\dfrac{2}{11}$
+\end{multicols}
+\end{enumerate}
+
+\section*{Άσκηση 7  \hfill \small{20 μονάδες}}
+Να υπολογίσετε τις παρακάτω αριθμητικές παραστάσεις.
+\begin{enumerate}[1)]
+ \item $1+\dfrac{1}{2}+\dfrac{1}{4}-\dfrac{3}{4}$
+ \item $5+\dfrac{1}{3}-\dfrac{2}{3}$
+ \item $\biggr(\dfrac{7}{2}+\dfrac{4}{3}\biggl)-\biggr(\dfrac{1}{4}+\dfrac{1}{2}\biggl)$
+ \item $\biggr(\dfrac{6}{4}-\dfrac{1}{2}\biggl)-\biggr(\dfrac{7}{5}-1\biggl)$
+ \item $\biggr(2\dfrac{2}{3}-\dfrac{2}{6}\biggr)-\biggr(\frac{2}{4}-\dfrac{1}{3}\biggl)$
+\end{enumerate}
+
+
+\end{document}

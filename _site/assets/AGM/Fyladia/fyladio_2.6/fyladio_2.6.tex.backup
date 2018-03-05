@@ -1,0 +1,310 @@
+
+\documentclass[a4paper,10pt]{report}
+
+%\usepackage[landscape]{geometry}
+\usepackage[cm-default]{fontspec}
+\setromanfont{FreeSerif}
+\setsansfont{FreeSans}
+\setmonofont{FreeMono}
+\usepackage[utf8x]{inputenc}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{xgreek}
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\usepackage{ulem}
+\usepackage{color}
+\usepackage{verbatim}
+\usepackage{nopageno}
+\usepackage{graphicx}
+\usepackage{textpos}
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
+%\usepackage[colorgrid,texcoord]{eso-pic}
+\usepackage[outline]{contour}
+\usepackage{wrapfig}
+\usepackage{url}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{fancybox,fancyhdr}
+\usepackage{subfigure}
+\usepackage{pstricks}
+\usepackage{epsfig}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\hypersetup{
+  bookmarks=true,
+  bookmarksopen=true,
+  pdfborder=false,
+  pdfpagemode=UseNone,
+  raiselinks=true,
+  pdfhighlight={/P},
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=black
+}
+
+
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+
+
+% Margins
+%\setlength{\textwidth}{24cm}
+
+%\setlength{\voffset}{0in}
+%\setlength{\textheight}{6.8in}
+% Colors
+\definecolor{cbrown}{rgb}{0.49,0.24,0.07}
+\definecolor{cmpez}{rgb}{0.92,0.88,0.79}
+\definecolor{cmpez2}{rgb}{0.62,0.33,0.34}
+\definecolor{cwhite}{rgb}{1,1,1}
+\definecolor{cblack}{rgb}{0,0,0}
+\definecolor{cred}{rgb}{0.9,0.15,0.15}
+\definecolor{clblue}{rgb}{0.57,0.85,0.97}
+\definecolor{corange}{rgb}{0.86,0.49,0.18}
+\definecolor{clorange}{rgb}{0.95,0.84,0.61}
+\definecolor{cyellow}{rgb}{1,0.95,0.16}
+\definecolor{cgreen}{rgb}{0.69,0.8,0.31}
+\definecolor{clbrown}{rgb}{0.78,0.67,0.43}
+\definecolor{cmagenta}{rgb}{0.79,0.05,0.54}
+\definecolor{cgray}{rgb}{0.76,0.73,0.63}
+\definecolor{bluesite}{rgb}{0.05,0.43,0.67}
+\definecolor{redsite}{rgb}{0.90,0.15,0.15}
+\definecolor{backsite}{rgb}{0.07,0.07,0.07}
+% ----------- from Costas -----------------------------
+
+%---------------   Main Fonts    -----------------%   
+
+% \setmainfont[Mapping=tex-text]{Calibri}
+% \setmainfont[Mapping=tex-text]{Times New Roman}
+%\setmainfont[Mapping=tex-text]{Droid Serif}
+%\setmainfont[Mapping=tex-text]{Cambria}
+%\setmainfont[Mapping=tex-text]{cm-unicode}
+% \setmainfont[Mapping=tex-text]{Gentium}
+% \setmainfont[Mapping=tex-text]{GFS Didot}
+% \setmainfont[Mapping=tex-text]{Comic Sans MS}
+ \setmainfont[Mapping=tex-text]{Ubuntu}
+% \setmainfont[Mapping=tex-text]{Myriad Pro}
+% \setmainfont[Mapping=tex-text]{CMU Concrete}
+%\setmainfont[Mapping=tex-text]{DejaVu Sans}
+%\setmainfont[Mapping=tex-text]{KerkisSans}
+%\setmainfont[Mapping=tex-text]{KerkisCaligraphic}
+% \setmainfont[Mapping=tex-text]{Segoe Print}
+% \setmainfont[Mapping=tex-text]{Gabriola}
+
+%------------------------------------------------%
+
+% ------------ Mathematics Fonts ----------------%
+\setmathfont{Asana-Math.ttf}
+% -----------------------------------------------%
+% Misc
+\author{Κασωτάκη Ε. - Σμαραγδάκης Κ.}
+\title{www.math24.gr}
+% ---------------- Formation --------------------%
+
+
+\setlength\topmargin{-0.7cm}
+\addtolength\topmargin{-\headheight}
+\addtolength\topmargin{-\headsep}
+\setlength\textheight{26cm}
+\setlength\oddsidemargin{-0.54cm}
+\setlength\evensidemargin{-0.54cm}
+%\setlength\marginparwidth{1.5in}
+\setlength\textwidth{17cm}
+
+\RequirePackage[avantgarde]{quotchap}
+\renewcommand\chapterheadstartvskip{\vspace*{0\baselineskip}}
+\RequirePackage[calcwidth]{titlesec}
+\titleformat{\section}[hang]{\bfseries}
+{\Large\thesection}{12pt}{\Large}[{\titlerule[0.9pt]}]
+%--------------------------------------------------%
+\usepackage{draftwatermark}
+\SetWatermarkText{www.math24.gr}
+\SetWatermarkLightness{0.9}
+\SetWatermarkScale{0.6}
+%--------------------------------------------------%
+
+
+\usepackage{xcolor}
+\usepackage{amsthm}
+\usepackage{framed}
+\usepackage{parskip}
+
+\colorlet{shadecolor}{bluesite!20}
+
+\newtheorem*{orismos}{Ορισμός}
+
+\newenvironment{notation}
+  {\begin{shaded}\begin{theorem}}
+  {\end{theorem}\end{shaded}}
+
+
+
+
+% Document begins
+\begin{document}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\fancyhead[LO,LE]{
+ %\textblockcolor{backsite}
+ %\begin{textblock}{5}(-2,-0.55)
+  %\rule{0cm}{1cm}
+ %\end{textblock}
+ \textblockcolor{bluesite}
+ \begin{textblock}{5}(-1.5,-0.55)
+  \rule{0cm}{1cm}
+ \end{textblock}
+ %\textblockcolor{bluesite}
+ %\begin{textblock}{14}(5.5,-0.55)
+ % \rule{0cm}{1cm}
+ %\end{textblock}
+ \begin{textblock}{0}(-1,-0.25)
+ \color{cwhite} \begin{Large}www.math24.gr\end{Large}
+ \end{textblock}
+\begin{textblock}{0}(16,-0.4)
+ \color{cwhite} \includegraphics[height=1.5cm]{math24_logo.png}
+ \end{textblock}
+\textblockcolor{white}
+\begin{textblock}{17}(-1,28)
+ \color{backsite} \begin{small}Copyright \textcopyright 2012, Κασωτάκη Ε.(ikasotaki@gmail.com) - Σμαραγδάκης Κ.(kesmarag@gmail.com)\end{small}
+ \end{textblock}
+}
+ 
+\begin{shaded}
+\begin{center}
+\huge \textbf{Φυλλάδιο Ασκήσεων}\\
+%Πρόσθεση ρητών αριθμών
+\end{center} 
+\textbf{Μαθηματικά Α' Γυμνασίου} \hfill \textbf{Ημερομηνία Παράδοσης : \hspace{2em} }
+\subsection*{Ονοματεπώνυμο :\hfill  \hspace{5em}}
+\end{shaded}
+\vspace{2em}
+\begin{itemize}
+ \item Διαίρεση κλασμάτων
+ \item Σύνθετο κλάσμα
+ \item Μετατροπή σύνθετου κλάσματος σε απλό
+\end{itemize}
+
+
+\section*{Θεωρία - Διαίρεση  Κλασμάτων\hfill \small{}}
+Για να \textbf{διαιρέσουμε} δύο  κλάσματα πολλαπλασιάζουμε το διαιρετέο με τον
+αντίστροφο του διαιρέτη.  \\
+Δηλαδή $\dfrac{α}{β} : \dfrac{γ}{δ} = \dfrac{α}{β} \cdot \dfrac{δ}{γ}$\\
+\textbf{π.χ} $\dfrac{2}{3} : \dfrac{3}{7} = \dfrac{2}{5} \cdot \dfrac{7}{3}=\dfrac{2\cdot7}{5\cdot3}=\dfrac{14}{15}$
+
+
+
+\section*{Άσκηση 1  \hfill \small{40 μονάδες}}
+Να κάνετε τις παρακάτω διαιρέσεις:
+\begin{enumerate}[1)]
+\begin{multicols}{2}
+ \item $\dfrac{8}{3} : \dfrac{5}{3}$
+ \item $\dfrac{9}{5} : \dfrac{18}{15}$
+ \item $\dfrac{6}{3} : \dfrac{8}{9}$
+ \item $\dfrac{23}{3} : \dfrac{23}{6}$
+ \item $\dfrac{13}{2} : \dfrac{26}{8}$
+ \item $\dfrac{5}{7}:3$
+ \item $\dfrac{14}{3}:7$
+ \item $\dfrac{12}{5}:5$
+ \item $4:\dfrac{16}{3}$
+ \item $7:\dfrac{34}{5}$
+\end{multicols}
+\end{enumerate}
+
+
+\section*{Θεωρία - Σύνθετο Κλάσμα\hfill \small{}}
+\begin{itemize}
+ \item \textbf{Σύνθετο κλάσμα} ονομάζεται το κλάσμα του οποίου ένας τουλάχιστον όρος του είναι κλάσμα.\\
+        \textbf{π.χ} $\dfrac{\dfrac{8}{5}}{\dfrac{6}{7}}$
+ \item \textbf{Μετατροπή σύνθετου κλάσματος σε απλό:} Ένα σύνθετο κλάσμα μετατρέπεται σε 
+        απλό χρησιμοποιώντας τη σχέση: 
+$$ \dfrac{\dfrac{α}{β}}{\dfrac{γ}{δ}} = \dfrac{α\cdot δ}{β\cdot γ}  $$
+        \textbf{π.χ} $ \dfrac{\dfrac{5}{3}}{\dfrac{2}{7}} = \dfrac{5\cdot 7}{3\cdot 6}=\dfrac{35}{18}  $
+\end{itemize}
+
+
+
+
+
+\section*{Άσκηση 2  \hfill \small{40 μονάδες}}
+Να μετατρέψετε τα σύνθετα κλάσματα σε απλά:
+\begin{enumerate}[1)]
+%\begin{multicols}{2}
+ \item $\dfrac{\dfrac{2}{5}}{\dfrac{7}{4}}$
+ \item $\dfrac{\dfrac{3}{7}}{\dfrac{6}{5}}$
+ \item $\dfrac{\dfrac{8}{7}}{\dfrac{8}{14}}$
+ \item $\dfrac{\dfrac{20}{11}}{\dfrac{3}{2}}$
+ \item $\dfrac{\dfrac{6}{7}}{\dfrac{12}{21}}$
+ \item $\dfrac{3}{\dfrac{5}{7}}$
+ \item $\dfrac{8}{\dfrac{4}{11}}$
+ \item $\dfrac{\dfrac{2}{3}}{13} $
+ \item $\dfrac{\dfrac{6}{4}}{10}$
+ \item $\dfrac{5}{\dfrac{15}{35}}$
+%\end{multicols}
+\end{enumerate}
+
+
+
+
+
+\section*{Άσκηση 3  \hfill \small{20 μονάδες}}
+Να κάνετε τις παρακάτω πράξεις:
+\begin{enumerate}[1)]
+\begin{multicols}{2}
+ \item $\dfrac{3}{7}$ και $\dfrac{7}{3}$
+ \item $\dfrac{2}{5}$ και $\dfrac{4}{10}$
+ \item $\dfrac{4}{6}$ και $\dfrac{8}{3}$
+ \item $\dfrac{5}{6}$ και $\dfrac{18}{15}$
+ \item $\dfrac{6}{7}$ και $\dfrac{7}{3}$
+ \item $2$ και $\dfrac{2}{5}$
+ \item $2$ και $\dfrac{1}{2}$
+ \item $3$ και $\dfrac{1}{3}$
+ \item $5$ και $\dfrac{2}{10}$
+ \item $6$ και $\dfrac{3}{12}$
+\end{multicols}
+\end{enumerate}
+
+
+
+
+
+
+\section*{Άσκηση 4  \hfill \small{20 μονάδες}}
+Να βρείτε τους αντίστροφους των παρακάτω αριθμών:
+\begin{enumerate}[1)]
+\begin{multicols}{2}
+ \item $\dfrac{5}{3}$
+ \item $\dfrac{3}{2}$
+ \item $\dfrac{6}{5}$
+ \item $\dfrac{9}{2}$
+ \item $\dfrac{6}{7}$
+ \item $6$
+ \item $8$
+ \item $13$
+ \item $5$
+ \item $1$
+\end{multicols}
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+\end{document}
