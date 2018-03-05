@@ -1,0 +1,295 @@
+
+\documentclass[a4paper,10pt]{report}
+
+%\usepackage[landscape]{geometry}
+\usepackage[cm-default]{fontspec}
+\setromanfont{FreeSerif}
+\setsansfont{FreeSans}
+\setmonofont{FreeMono}
+\usepackage[utf8x]{inputenc}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{xgreek}
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\usepackage{ulem}
+\usepackage{color}
+\usepackage{verbatim}
+\usepackage{nopageno}
+\usepackage{graphicx}
+\usepackage{textpos}
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
+%\usepackage[colorgrid,texcoord]{eso-pic}
+\usepackage[outline]{contour}
+\usepackage{wrapfig}
+\usepackage{url}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{fancybox,fancyhdr}
+\usepackage{subfigure}
+\usepackage{pstricks}
+\usepackage{epsfig}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\hypersetup{
+  bookmarks=true,
+  bookmarksopen=true,
+  pdfborder=false,
+  pdfpagemode=UseNone,
+  raiselinks=true,
+  pdfhighlight={/P},
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=black
+}
+
+
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+
+
+% Margins
+%\setlength{\textwidth}{24cm}
+
+%\setlength{\voffset}{0in}
+%\setlength{\textheight}{6.8in}
+% Colors
+\definecolor{cbrown}{rgb}{0.49,0.24,0.07}
+\definecolor{cmpez}{rgb}{0.92,0.88,0.79}
+\definecolor{cmpez2}{rgb}{0.62,0.33,0.34}
+\definecolor{cwhite}{rgb}{1,1,1}
+\definecolor{cblack}{rgb}{0,0,0}
+\definecolor{cred}{rgb}{0.9,0.15,0.15}
+\definecolor{clblue}{rgb}{0.57,0.85,0.97}
+\definecolor{corange}{rgb}{0.86,0.49,0.18}
+\definecolor{clorange}{rgb}{0.95,0.84,0.61}
+\definecolor{cyellow}{rgb}{1,0.95,0.16}
+\definecolor{cgreen}{rgb}{0.69,0.8,0.31}
+\definecolor{clbrown}{rgb}{0.78,0.67,0.43}
+\definecolor{cmagenta}{rgb}{0.79,0.05,0.54}
+\definecolor{cgray}{rgb}{0.76,0.73,0.63}
+\definecolor{bluesite}{rgb}{0.05,0.43,0.67}
+\definecolor{redsite}{rgb}{0.90,0.15,0.15}
+\definecolor{backsite}{rgb}{0.07,0.07,0.07}
+% ----------- from Costas -----------------------------
+
+%---------------   Main Fonts    -----------------%   
+
+% \setmainfont[Mapping=tex-text]{Calibri}
+% \setmainfont[Mapping=tex-text]{Times New Roman}
+%\setmainfont[Mapping=tex-text]{Droid Serif}
+%\setmainfont[Mapping=tex-text]{Cambria}
+%\setmainfont[Mapping=tex-text]{cm-unicode}
+% \setmainfont[Mapping=tex-text]{Gentium}
+% \setmainfont[Mapping=tex-text]{GFS Didot}
+% \setmainfont[Mapping=tex-text]{Comic Sans MS}
+ \setmainfont[Mapping=tex-text]{Ubuntu}
+% \setmainfont[Mapping=tex-text]{Myriad Pro}
+% \setmainfont[Mapping=tex-text]{CMU Concrete}
+%\setmainfont[Mapping=tex-text]{DejaVu Sans}
+%\setmainfont[Mapping=tex-text]{KerkisSans}
+%\setmainfont[Mapping=tex-text]{KerkisCaligraphic}
+% \setmainfont[Mapping=tex-text]{Segoe Print}
+% \setmainfont[Mapping=tex-text]{Gabriola}
+
+%------------------------------------------------%
+
+% ------------ Mathematics Fonts ----------------%
+\setmathfont{Asana-Math.ttf}
+% -----------------------------------------------%
+% Misc
+\author{Κασωτάκη Ε. - Σμαραγδάκης Κ.}
+\title{www.math24.gr}
+% ---------------- Formation --------------------%
+
+
+\setlength\topmargin{-0.7cm}
+\addtolength\topmargin{-\headheight}
+\addtolength\topmargin{-\headsep}
+\setlength\textheight{26cm}
+\setlength\oddsidemargin{-0.54cm}
+\setlength\evensidemargin{-0.54cm}
+%\setlength\marginparwidth{1.5in}
+\setlength\textwidth{17cm}
+
+\RequirePackage[avantgarde]{quotchap}
+\renewcommand\chapterheadstartvskip{\vspace*{0\baselineskip}}
+\RequirePackage[calcwidth]{titlesec}
+\titleformat{\section}[hang]{\bfseries}
+{\Large\thesection}{12pt}{\Large}[{\titlerule[0.9pt]}]
+%--------------------------------------------------%
+\usepackage{draftwatermark}
+\SetWatermarkText{www.math24.gr}
+\SetWatermarkLightness{0.9}
+\SetWatermarkScale{0.6}
+%--------------------------------------------------%
+
+
+\usepackage{xcolor}
+\usepackage{amsthm}
+\usepackage{framed}
+\usepackage{parskip}
+
+\colorlet{shadecolor}{bluesite!20}
+
+\newtheorem*{orismos}{Ορισμός}
+
+\newenvironment{notation}
+  {\begin{shaded}\begin{theorem}}
+  {\end{theorem}\end{shaded}}
+
+
+
+
+% Document begins
+\begin{document}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\fancyhead[LO,LE]{
+ %\textblockcolor{backsite}
+ %\begin{textblock}{5}(-2,-0.55)
+  %\rule{0cm}{1cm}
+ %\end{textblock}
+ \textblockcolor{bluesite}
+ \begin{textblock}{5}(-1.5,-0.55)
+  \rule{0cm}{1cm}
+ \end{textblock}
+ %\textblockcolor{bluesite}
+ %\begin{textblock}{14}(5.5,-0.55)
+ % \rule{0cm}{1cm}
+ %\end{textblock}
+ \begin{textblock}{0}(-1,-0.25)
+ \color{cwhite} \begin{Large}www.math24.gr\end{Large}
+ \end{textblock}
+\begin{textblock}{0}(16,-0.4)
+ \color{cwhite} \includegraphics[height=1.5cm]{math24_logo.png}
+ \end{textblock}
+\textblockcolor{white}
+\begin{textblock}{17}(-1,28)
+ \color{backsite} \begin{small}Copyright \textcopyright 2012, Κασωτάκη Ε.(ikasotaki@gmail.com) - Σμαραγδάκης Κ.(kesmarag@gmail.com)\end{small}
+ \end{textblock}
+}
+ 
+\begin{shaded}
+\begin{center}
+\huge \textbf{Φυλλάδιο Ασκήσεων}\\
+%Πρόσθεση ρητών αριθμών
+\end{center} 
+\textbf{Μαθηματικά Α' Γυμνασίου} \hfill \textbf{Ημερομηνία Παράδοσης : \hspace{2em} }
+\subsection*{Ονοματεπώνυμο :\hfill  \hspace{5em}}
+\end{shaded}
+\vspace{2em}
+\begin{itemize}
+ \item Ορισμός αριθμητικής παράστασης
+ \item Προτεραιότητα των πράξεων
+\end{itemize}
+
+\section*{Θεωρία - Αριθμητική Παράσταση \hfill \small{}}
+\textbf{Αριθμητική παράσταση} λέγεται κάθε σειρά αριθμών που συνδέονται μεταξύ τους με τα σύμβολα των πράξεων.\\
+\textbf{Π.χ} $2+7$ είναι αριθμητική παράσταση\\
+\textbf{Π.χ} $3\cdot7+4^{2}-2$ είναι αριθμητική παράσταση
+
+
+\section*{Θεωρία - Προτεραιότητα των Πράξεων  \hfill \small{}}
+\begin{itemize}
+ \item Σε μία αριθμητική παράσταση εκτελούμε τις πράξεις σύμφωνα με την παρακάτω σειρά:
+       \begin{itemize}
+        \item \textbf{1\textdegree  βήμα:} Υπολογίζουμε τις δυνάμεις
+        \item \textbf{2\textdegree  βήμα:} Κάνουμε τους πολλαπλασιασμούς και τις διαιρέσεις
+        \item \textbf{3\textdegree  βήμα:} Κάνουμε τις προσθέσεις και τις αφαιρέσεις
+       \end{itemize}
+ \item Αν στην αριθμητική παράσταση υπάρχουν παρενθέσεις κάνουμε πρώτα τις πράξεις με την παραπάνω σειρά
+ \item Αν κάποιο από τα παραπάνω βήματα "δεν υπάρχει" προχωράμε στο επόμενο.\\
+       \textbf{Π.χ } Στην παράσταση $7\cdot4+8$ δεν υπάρχουν δυνάμεις άρα το 1\textdegree  βήμα παραλείπεται 
+        και προχωράμε στο επόμενο.
+\end{itemize}
+\textbf{Παράδειγμα}\\
+Θέλουμε να υπολογίσουμε την τιμή της αλγεβρικής παράστασης: $Α=2+5\cdot 1^{10}$
+ \begin{itemize}
+        \item \textbf{1\textdegree  βήμα:} Πρώτα υπολογίζουμε το $1^{10}$ και βρίσκουμε ότι$1^{10}=1$.\\
+               Άρα $Α=2+3\cdot5\cdot 1^{10}=2+3\cdot5\cdot1$
+        \item \textbf{2\textdegree  βήμα:} Στη συνέχεια υπολογίζουμε το γινόμενο $5\cdot1$ και βρίσκουμε ότι 
+         $5\cdot1=5$.\\
+          Άρα $Α=2+5\cdot1=2+5$
+        \item \textbf{3\textdegree  βήμα:} Τέλος υπολογίζουμε το άθροισμα $2+5$ και βρίσκουμε ότι $2+5=7$.\\
+         Άρα $Α=7$
+\end{itemize}
+
+
+\section*{Άσκηση 1  \hfill \small{}25  μονάδες}
+Να αντιστοιχίσετε κάθε στοιχείο της αριστερής στήλης με ένα στοιχείο της δεξιάς στήλης
+\begin{itemize}
+\begin{multicols}{2}
+ \item $2+3\cdot4$
+ \item $(2+3)\cdot4$
+ \item $2\cdot(3+4)-2$
+ \item $2\cdot (3+4-2)$
+ \item $(2+3)-(4-2)$
+ \item $3$
+ \item $10$
+ \item $12$
+ \item $14$
+ \item $20$
+\end{multicols}
+\end{itemize}
+
+
+\section*{Άσκηση 2  \hfill \small{}25  μονάδες}
+Να αντιστοιχίσετε κάθε στοιχείο της αριστερής στήλης με ένα στοιχείο της δεξιάς στήλης
+\begin{itemize}
+\begin{multicols}{2}
+ \item $2^{2}\cdot2-4$
+ \item $2^{2}\cdot(4-2)$
+ \item $2^{2}-4$
+ \item $2^{2}\cdot4\cdot2$
+ \item $2^{2}+4+2$
+ \item $0$
+ \item $32$
+ \item $10$
+ \item $8$
+ \item $4$
+\end{multicols}
+\end{itemize}
+
+\section*{Άσκηση 3  \hfill \small{50 μονάδες}}
+Να υπολογίσετε τις τιμές των παρακάτω αριθμητικών παραστάσεων:
+\begin{enumerate}[1)]
+ \item $7\cdot2-6$
+ \item $6^{2}-2\cdot6$
+ \item $3\cdot3^{2}-2^{2}\cdot5$
+ \item $10^{2}-2\cdot5\cdot3\cdot1^{7}$
+ \item $3-2+5-2^{2}$ 
+ \item $(5-2)^{2}-2\cdot3$
+ \item $10\cdot(4^{2}-2\cdot3)-(2\cdot5)^{2}$
+ \item $8^{2}+6^{2}-2\cdot5\cdot5+1^{8}\cdot0$
+ \item $2\cdot(2^{2}\cdot3-2\cdot3)^{2}$
+ \item $2^{2}+2^{2}\cdot2^{2}-2^{2}$
+\end{enumerate}
+
+
+
+ 
+
+
+
+
+
+
+
+
+%\let\thefootnote\relax\footnotetext{Επιμέλεια : Κασωτάκη Ειρήνη (ikasotaki@gmail.com),    Σμαραγδάκης Κώστας (kesmarag@gmail.com)} 
+
+
+\end{document}
