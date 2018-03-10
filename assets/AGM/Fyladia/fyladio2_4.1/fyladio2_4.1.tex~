@@ -1,0 +1,306 @@
+
+\documentclass[a4paper,10pt]{report}
+
+%\usepackage[landscape]{geometry}
+\usepackage[cm-default]{fontspec}
+\setromanfont{FreeSerif}
+\setsansfont{FreeSans}
+\setmonofont{FreeMono}
+\usepackage[utf8x]{inputenc}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{xgreek}
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\usepackage{ulem}
+\usepackage{color}
+\usepackage{verbatim}
+\usepackage{nopageno}
+\usepackage{graphicx}
+\usepackage{textpos}
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
+%\usepackage[colorgrid,texcoord]{eso-pic}
+\usepackage[outline]{contour}
+\usepackage{wrapfig}
+\usepackage{url}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{fancybox,fancyhdr}
+\usepackage{subfigure}
+\usepackage{pstricks}
+\usepackage{epsfig}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\hypersetup{
+  bookmarks=true,
+  bookmarksopen=true,
+  pdfborder=false,
+  pdfpagemode=UseNone,
+  raiselinks=true,
+  pdfhighlight={/P},
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=black
+}
+
+
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+
+
+% Margins
+%\setlength{\textwidth}{24cm}
+
+%\setlength{\voffset}{0in}
+%\setlength{\textheight}{6.8in}
+% Colors
+\definecolor{cbrown}{rgb}{0.49,0.24,0.07}
+\definecolor{cmpez}{rgb}{0.92,0.88,0.79}
+\definecolor{cmpez2}{rgb}{0.62,0.33,0.34}
+\definecolor{cwhite}{rgb}{1,1,1}
+\definecolor{cblack}{rgb}{0,0,0}
+\definecolor{cred}{rgb}{0.9,0.15,0.15}
+\definecolor{clblue}{rgb}{0.57,0.85,0.97}
+\definecolor{corange}{rgb}{0.86,0.49,0.18}
+\definecolor{clorange}{rgb}{0.95,0.84,0.61}
+\definecolor{cyellow}{rgb}{1,0.95,0.16}
+\definecolor{cgreen}{rgb}{0.69,0.8,0.31}
+\definecolor{clbrown}{rgb}{0.78,0.67,0.43}
+\definecolor{cmagenta}{rgb}{0.79,0.05,0.54}
+\definecolor{cgray}{rgb}{0.76,0.73,0.63}
+\definecolor{bluesite}{rgb}{0.05,0.43,0.67}
+\definecolor{redsite}{rgb}{0.90,0.15,0.15}
+\definecolor{backsite}{rgb}{0.07,0.07,0.07}
+% ----------- from Costas -----------------------------
+
+%---------------   Main Fonts    -----------------%   
+
+% \setmainfont[Mapping=tex-text]{Calibri}
+% \setmainfont[Mapping=tex-text]{Times New Roman}
+%\setmainfont[Mapping=tex-text]{Droid Serif}
+%\setmainfont[Mapping=tex-text]{Cambria}
+%\setmainfont[Mapping=tex-text]{cm-unicode}
+% \setmainfont[Mapping=tex-text]{Gentium}
+% \setmainfont[Mapping=tex-text]{GFS Didot}
+% \setmainfont[Mapping=tex-text]{Comic Sans MS}
+ \setmainfont[Mapping=tex-text]{Ubuntu}
+% \setmainfont[Mapping=tex-text]{Myriad Pro}
+% \setmainfont[Mapping=tex-text]{CMU Concrete}
+%\setmainfont[Mapping=tex-text]{DejaVu Sans}
+%\setmainfont[Mapping=tex-text]{KerkisSans}
+%\setmainfont[Mapping=tex-text]{KerkisCaligraphic}
+% \setmainfont[Mapping=tex-text]{Segoe Print}
+% \setmainfont[Mapping=tex-text]{Gabriola}
+
+%------------------------------------------------%
+
+% ------------ Mathematics Fonts ----------------%
+\setmathfont{Asana-Math.ttf}
+% -----------------------------------------------%
+% Misc
+\author{Κασωτάκη Ε. - Σμαραγδάκης Κ.}
+\title{www.math24.gr}
+% ---------------- Formation --------------------%
+
+
+\setlength\topmargin{-0.7cm}
+\addtolength\topmargin{-\headheight}
+\addtolength\topmargin{-\headsep}
+\setlength\textheight{26cm}
+\setlength\oddsidemargin{-0.54cm}
+\setlength\evensidemargin{-0.54cm}
+%\setlength\marginparwidth{1.5in}
+\setlength\textwidth{17cm}
+
+\RequirePackage[avantgarde]{quotchap}
+\renewcommand\chapterheadstartvskip{\vspace*{0\baselineskip}}
+\RequirePackage[calcwidth]{titlesec}
+\titleformat{\section}[hang]{\bfseries}
+{\Large\thesection}{12pt}{\Large}[{\titlerule[0.9pt]}]
+%--------------------------------------------------%
+\usepackage{draftwatermark}
+\SetWatermarkText{www.math24.gr}
+\SetWatermarkLightness{0.9}
+\SetWatermarkScale{0.6}
+%--------------------------------------------------%
+
+
+\usepackage{xcolor}
+\usepackage{amsthm}
+\usepackage{framed}
+\usepackage{parskip}
+
+\colorlet{shadecolor}{bluesite!20}
+
+\newtheorem*{orismos}{Ορισμός}
+
+\newenvironment{notation}
+  {\begin{shaded}\begin{theorem}}
+  {\end{theorem}\end{shaded}}
+
+
+
+
+% Document begins
+\begin{document}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\fancyhead[LO,LE]{
+ %\textblockcolor{backsite}
+ %\begin{textblock}{5}(-2,-0.55)
+  %\rule{0cm}{1cm}
+ %\end{textblock}
+ \textblockcolor{bluesite}
+ \begin{textblock}{5}(-1.5,-0.55)
+  \rule{0cm}{1cm}
+ \end{textblock}
+ %\textblockcolor{bluesite}
+ %\begin{textblock}{14}(5.5,-0.55)
+ % \rule{0cm}{1cm}
+ %\end{textblock}
+ \begin{textblock}{0}(-1,-0.25)
+ \color{cwhite} \begin{Large}www.math24.gr\end{Large}
+ \end{textblock}
+\begin{textblock}{0}(16,-0.4)
+ \color{cwhite} \includegraphics[height=1.5cm]{math24_logo.png}
+ \end{textblock}
+\textblockcolor{white}
+\begin{textblock}{17}(-1,28)
+ \color{backsite} \begin{small}Copyright \textcopyright 2011, Κασωτάκη Ε.(ikasotaki@gmail.com) - Σμαραγδάκης Κ.(kesmarag@gmail.com)\end{small}
+ \end{textblock}
+}
+ 
+\begin{shaded}
+\begin{center}
+\huge \textbf{Φυλλάδιο Ασκήσεων}\\
+%Πρόσθεση ρητών αριθμών
+\end{center} 
+\textbf{Μαθηματικά Α' Γυμνασίου} \hfill \textbf{Ημερομηνία Παράδοσης : \hspace{2em} }
+\subsection*{Ονοματεπώνυμο :\hfill  \hspace{5em}}
+\end{shaded}
+\vspace{2em}
+\begin{itemize}
+ \item Ορισμός της εξίσωσης 
+ \item Λύση της εξίσωσης
+ \item Επίλυση εξίσωσης
+ \item Αόριστες και αδύνατες εξισώσεις
+\end{itemize}
+
+\section*{Θεωρία - Εξίσωση με έναν άγνωστο \hfill \small{}}
+\textbf{Εξίσωση} με έναν άγνωστο είναι μία ισότητα, που περιέχει αριθμούς και ένα γράμμα (άγνωστος).\\
+\textbf{π.χ} $x+1=4$\\
+\textbf{π.χ} $y-2=6$\\
+\textbf{π.χ} $2α=8$\\
+
+
+
+\section*{Άσκηση 1  \hfill \small{30 μονάδες}}
+Να μετατρέψετε τις παρακάτω λεκτικές προτάσεις σε μαθηματικές εκφράσεις:
+\begin{enumerate}[1)]
+\begin{multicols}{2}
+ \item $2\cdot 5 =10$
+ \item $2\cdot x =10$
+ \item $x+7=13$
+ \item $x-3=10$
+ \item $3+7=10$
+ \item $7+5=15$
+ \item $3\cdot x=21$
+ \item $x-2=20$
+ \item $30-5=25$
+ \item $3\cdot 5=15$
+\end{multicols}
+\end{enumerate}
+
+
+
+
+\section*{Θεωρία - Λύση της εξίσωσης \hfill \small{}}
+\textbf{Λύση} ή \textbf{ρίζα} της εξίσωσης είναι ο αριθμός που, όταν αντικαταστήσει τον άγνωστο, 
+επαληθεύει την ισότητα.\\
+\textbf{π.χ} Λύση της εξίσωσης $x-3=10$ είναι ο αριθμός $13$ διότι $13-3=10$, για τη λύση γράφουμε $x=13$
+
+\section*{Άσκηση 2  \hfill \small{20 μονάδες}}
+Τοποθετείστε ένα "Χ" στη θέση εκείνη που ο αριθμός επαληθεύει την αντίστοιχη εξίσωση. 
+\begin{center}
+ \begin{tabular}{|c|c|c|c|c|c|}\hline 
+                       & $1$ & $2$ & $3$ & $4$ & $5$          \\
+\hline 
+$x-1=4$                &     &     &     &     &       \\
+\hline 
+$x+1=2$                &     &     &     &     &       \\                    
+\hline 
+$10-x=7$               &     &     &     &     &       \\
+\hline 
+$3\cdot x=6 $          &     &     &     &     &       \\
+\hline 
+$4\cdot x=16 $          &     &     &     &     &       \\
+\hline 
+\end{tabular}
+\end{center}
+
+
+
+\section*{Θεωρία - Επίλυση της εξίσωσης \hfill \small{}}
+\textbf{Επίλυση της εξίσωσης} ονομάζεται η διαδικασία, μέσω της οποίας, βρίσκουμε τη λύση της εξίσωσης.\\
+\textbf{Παρατήρηση:} Όταν μας ζητάνε να λύσουμε μία εξίσωση αυτό σημαίνει ότι πρέπει να βρούμε τη λύση της.
+
+
+\section*{Άσκηση 3  \hfill \small{30 μονάδες}}
+Να λύσετε τις παρακάτω εξισώσεις:
+\begin{enumerate}[1)]
+\begin{multicols}{2}
+ \item $x+4=14$
+ \item $3\cdot x =24$
+ \item $x-8=20$
+ \item $5-x=3$
+ \item $8+x=13$
+ \item $2\cdot x=2$
+ \item $4\cdot x=8-4$
+ \item $x-5=15$
+ \item $x+7=14$
+ \item $\dfrac{x}{4}=3$
+\end{multicols}
+\end{enumerate}
+
+
+
+\section*{Θεωρία - Αόριστες και Αδύνατες εξισώσεις \hfill \small{}}
+\begin{itemize}
+ \item Μια εξίσωση λέγεται \textbf{ταυτότητα} ή \textbf{αόριστη}, όταν, όλοι οι αριθμοί είναι λύσεις της. \\
+\textbf{π.χ} $x=x$\\
+\textbf{π.χ} $0\cdot x=0$
+ \item Μια εξίσωση λέγεται \textbf{αδύνατη}, όταν, κανένας αριθμός δεν την επαληθεύει. \\
+\textbf{π.χ} $x+1=x+2$\\
+\textbf{π.χ} $0\cdot x=1$
+\end{itemize}
+
+
+\section*{Άσκηση 2  \hfill \small{20 μονάδες}}
+Να χαρακτηρίσετε τις παρακάτω εξισώσεις ως αόριστες/ταυτότητες ή αδύνατες: 
+\begin{enumerate}
+ \item $2x=2x$
+ \item $0\cdot x=4$
+ \item $0\cdot x=0$
+ \item $x+1=x+1$
+ \item $x+2=x+3$
+\end{enumerate}
+
+
+
+
+
+
+
+\end{document}
