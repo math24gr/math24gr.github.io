@@ -1,0 +1,322 @@
+
+\documentclass[a4paper,10pt]{report}
+
+%\usepackage[landscape]{geometry}
+\usepackage[cm-default]{fontspec}
+\setromanfont{FreeSerif}
+\setsansfont{FreeSans}
+\setmonofont{FreeMono}
+\usepackage[utf8x]{inputenc}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{xgreek}
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\usepackage{ulem}
+\usepackage{color}
+\usepackage{verbatim}
+\usepackage{nopageno}
+\usepackage{graphicx}
+\usepackage{textpos}
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
+%\usepackage[colorgrid,texcoord]{eso-pic}
+\usepackage[outline]{contour}
+\usepackage{wrapfig}
+\usepackage{url}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{fancybox,fancyhdr}
+\usepackage{subfigure}
+\usepackage{pstricks}
+\usepackage{epsfig}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\hypersetup{
+  bookmarks=true,
+  bookmarksopen=true,
+  pdfborder=false,
+  pdfpagemode=UseNone,
+  raiselinks=true,
+  pdfhighlight={/P},
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=black
+}
+
+
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+
+
+% Margins
+%\setlength{\textwidth}{24cm}
+
+%\setlength{\voffset}{0in}
+%\setlength{\textheight}{6.8in}
+% Colors
+\definecolor{cbrown}{rgb}{0.49,0.24,0.07}
+\definecolor{cmpez}{rgb}{0.92,0.88,0.79}
+\definecolor{cmpez2}{rgb}{0.62,0.33,0.34}
+\definecolor{cwhite}{rgb}{1,1,1}
+\definecolor{cblack}{rgb}{0,0,0}
+\definecolor{cred}{rgb}{0.9,0.15,0.15}
+\definecolor{clblue}{rgb}{0.57,0.85,0.97}
+\definecolor{corange}{rgb}{0.86,0.49,0.18}
+\definecolor{clorange}{rgb}{0.95,0.84,0.61}
+\definecolor{cyellow}{rgb}{1,0.95,0.16}
+\definecolor{cgreen}{rgb}{0.69,0.8,0.31}
+\definecolor{clbrown}{rgb}{0.78,0.67,0.43}
+\definecolor{cmagenta}{rgb}{0.79,0.05,0.54}
+\definecolor{cgray}{rgb}{0.76,0.73,0.63}
+\definecolor{bluesite}{rgb}{0.05,0.43,0.67}
+\definecolor{redsite}{rgb}{0.90,0.15,0.15}
+\definecolor{backsite}{rgb}{0.07,0.07,0.07}
+% ----------- from Costas -----------------------------
+
+%---------------   Main Fonts    -----------------%   
+
+% \setmainfont[Mapping=tex-text]{Calibri}
+% \setmainfont[Mapping=tex-text]{Times New Roman}
+%\setmainfont[Mapping=tex-text]{Droid Serif}
+%\setmainfont[Mapping=tex-text]{Cambria}
+%\setmainfont[Mapping=tex-text]{cm-unicode}
+% \setmainfont[Mapping=tex-text]{Gentium}
+% \setmainfont[Mapping=tex-text]{GFS Didot}
+% \setmainfont[Mapping=tex-text]{Comic Sans MS}
+ \setmainfont[Mapping=tex-text]{Ubuntu}
+% \setmainfont[Mapping=tex-text]{Myriad Pro}
+% \setmainfont[Mapping=tex-text]{CMU Concrete}
+%\setmainfont[Mapping=tex-text]{DejaVu Sans}
+%\setmainfont[Mapping=tex-text]{KerkisSans}
+%\setmainfont[Mapping=tex-text]{KerkisCaligraphic}
+% \setmainfont[Mapping=tex-text]{Segoe Print}
+% \setmainfont[Mapping=tex-text]{Gabriola}
+
+%------------------------------------------------%
+
+% ------------ Mathematics Fonts ----------------%
+\setmathfont{Asana-Math.ttf}
+% -----------------------------------------------%
+% Misc
+\author{Κασωτάκη Ε. - Σμαραγδάκης Κ.}
+\title{www.math24.gr}
+% ---------------- Formation --------------------%
+
+
+\setlength\topmargin{-0.7cm}
+\addtolength\topmargin{-\headheight}
+\addtolength\topmargin{-\headsep}
+\setlength\textheight{26cm}
+\setlength\oddsidemargin{-0.54cm}
+\setlength\evensidemargin{-0.54cm}
+%\setlength\marginparwidth{1.5in}
+\setlength\textwidth{17cm}
+
+\RequirePackage[avantgarde]{quotchap}
+\renewcommand\chapterheadstartvskip{\vspace*{0\baselineskip}}
+\RequirePackage[calcwidth]{titlesec}
+\titleformat{\section}[hang]{\bfseries}
+{\Large\thesection}{12pt}{\Large}[{\titlerule[0.9pt]}]
+%--------------------------------------------------%
+\usepackage{draftwatermark}
+\SetWatermarkText{www.math24.gr}
+\SetWatermarkLightness{0.9}
+\SetWatermarkScale{0.6}
+%--------------------------------------------------%
+
+
+\usepackage{xcolor}
+\usepackage{amsthm}
+\usepackage{framed}
+\usepackage{parskip}
+
+\colorlet{shadecolor}{bluesite!20}
+
+\newtheorem*{orismos}{Ορισμός}
+
+\newenvironment{notation}
+  {\begin{shaded}\begin{theorem}}
+  {\end{theorem}\end{shaded}}
+
+
+
+
+% Document begins
+\begin{document}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\fancyhead[LO,LE]{
+ %\textblockcolor{backsite}
+ %\begin{textblock}{5}(-2,-0.55)
+  %\rule{0cm}{1cm}
+ %\end{textblock}
+ \textblockcolor{bluesite}
+ \begin{textblock}{5}(-1.5,-0.55)
+  \rule{0cm}{1cm}
+ \end{textblock}
+ %\textblockcolor{bluesite}
+ %\begin{textblock}{14}(5.5,-0.55)
+ % \rule{0cm}{1cm}
+ %\end{textblock}
+ \begin{textblock}{0}(-1,-0.25)
+ \color{cwhite} \begin{Large}www.math24.gr\end{Large}
+ \end{textblock}
+\begin{textblock}{0}(16,-0.4)
+ \color{cwhite} \includegraphics[height=1.5cm]{math24_logo.png}
+ \end{textblock}
+\textblockcolor{white}
+\begin{textblock}{17}(-1,28)
+ \color{backsite} \begin{small}Copyright \textcopyright 2011, Κασωτάκη Ε.(ikasotaki@gmail.com) - Σμαραγδάκης Κ.(kesmarag@gmail.com)\end{small}
+ \end{textblock}
+}
+ \begin{shaded}
+\begin{center}
+\huge \textbf{Μαθηματικά Α' Γυμνασίου}\\
+\end{center} 
+\begin{center}
+\textbf{Επαναληπτικές Ασκήσεις για τις διακοπές των Χριστουγέννων"} \hfill \textbf{}
+\end{center}
+%\subsection*{}
+\end{shaded}
+%\vspace{2em
+%\begin{shaded}
+%\begin{center}
+%\huge \textbf{Επαναληπτικές Ασκήσεις για το Κεφάλαιο 1}\\
+%Πρόσθεση ρητών αριθμών
+%\end{center} 
+%\textbf{Μαθηματικά Α' Γυμνασίου} \hfill \textbf{Ημερομηνία Παράδοσης : \hspace{2em} }
+%\subsection*{Ονοματεπώνυμο :\hfill  \hspace{5em}}
+%\end{shaded}
+\vspace{2em}
+\begin{itemize}
+\item Κεφάλαιο 1
+\item Κεφάλαιο 7 (7.1-7.5)
+\item Κεφάλαιο 2 (2.1-2.2)
+\item Κεφάλαιο Β.1 (Β.1.1-Β.1.3)
+\end{itemize}
+
+
+\section*{Άσκηση 1  \hfill \small{}}
+Να βρείτε αν οι παρακάτω αριθμοί διαιρούνται με $2,3,4,5$
+\begin{enumerate}[i)]
+ \item $271$
+ \item $444$
+ \item $375$
+ \item $920$
+ \item $111$
+\end{enumerate}
+
+
+\section*{Άσκηση 2  \hfill \small{}}
+Να βρείτε το $ΕΚΠ$ και το $ΜΚΔ$  των παρακάτω αριθμών:
+\begin{enumerate}[i)]
+ \item $15,45$
+ \item $8,36$
+ \item $13,27$
+ \item $8,9$
+ \item $18,36$
+\end{enumerate}
+
+
+\section*{Άσκηση 3  \hfill \small{}}
+Να αναλυθούν οι αριθμοί $250$ και $426$ σε γινόμενα πρώτων παραγόντων. Με την βοήθεια της ανάλυσης αυτής να βρεθούν 
+ο $ΜΚΔ$ και το $ΕΚΠ$ αυτών των αριθμών.
+
+
+\section*{Άσκηση 4  \hfill \small{}}
+Να βρείτε την απόλυτη τιμή των παρακάτω αριθμών: 
+\begin{enumerate}[i)]
+ \item $-27$
+ \item $45$
+ \item $0$
+ \item $28$
+ \item $-108$
+\end{enumerate}
+
+
+
+\section*{Άσκηση 5  \hfill \small{}}
+Να βρείτε τους αριθμούς που έχουν ως απόλυτη τιμή 
+\begin{enumerate}[i)]
+ \item $78$
+ \item $49$
+ \item $1072$
+ \item $775$
+ \item $0$
+\end{enumerate}
+
+
+
+\section*{Άσκηση 6  \hfill \small{}}
+Να γράψετε τους αριθμούς $-3,-8,40,23,-10$ σε αύξουσα σειρά.
+
+\section*{Άσκηση 7  \hfill \small{}}
+Να υπολογίσετε την τιμή των παρακάτω αριθμητικών παραστάσεων με δύο τρόπους.\\
+(Υπόδειξη: 1ος τρόπος: με χρήση της επιμεριστικής ιδιότητας και 2ος τρόπος: με προτεραιότητα των πράξεων)
+\begin{enumerate}[i)]
+ \item $-3\cdot (10-2-7)+5\cdot (-1+2+20)$
+ \item $(10+5)\cdot (20-10)$
+ \item $(3-5)\cdot (10-4)$
+ \item $(10+2)\cdot (|-7|-1+2)$
+ \item $(4-2)\cdot (2-|-1|+4)$
+\end{enumerate}
+
+
+
+\section*{Άσκηση 8  \hfill \small{}}
+Να κάνετε τις πράξεις χρησιμοποιώντας το αντίστροφο της επιμεριστικής ιδιότητας
+\begin{enumerate}[i)]
+ \item $3\cdot 17 +3\cdot 3 +3\cdot 71+3\cdot 9$
+ \item $2\cdot x+x\cdot 5-4\cdot x -10\cdot x$
+ \item $19\cdot 2+19\cdot 6-19\cdot 3+19\cdot 5$
+ \item $2\cdot y-13\cdot y -6\cdot y+4\cdot y$
+ \item $15\cdot 9-15\cdot 2+3\cdot 15+15\cdot 90$
+\end{enumerate}
+
+
+\section*{Άσκηση 9  \hfill \small{}}
+Μία κασετίνα αποτελείται αποκλειστικά από στυλό (μπλε, κόκκινα, μαύρα κ.τ.λ). Τα $\dfrac{3}{8}$ της κασετίνας 
+είναι μπλε στυλό. Να βρείτε πόσα στυλό έχει η κασετίνα αν γνωρίζεται ότι τα μπλε στυλό είναι 12.
+
+\section*{Άσκηση 10  \hfill \small{}}
+Να εξετάσετε αν τα παρακάτω κλάσματα είναι ισοδύναμα 
+\begin{enumerate}[i)]
+ \item $\dfrac{11}{22}$ και $\dfrac{2}{4}$
+ \item $\dfrac{3}{5}$ και $\dfrac{10}{3}$
+ \item $\dfrac{1}{2}$ και $\dfrac{1}{8}$
+ \item $\dfrac{3}{5}$ και $\dfrac{9}{15}$
+ \item $\dfrac{2}{8}$ και $\dfrac{6}{24}$
+\end{enumerate}
+
+\section*{Άσκηση 11  \hfill \small{}}
+Να απλοποιήσετε τα παρακάτω κλάσματα. \\
+(Υπόδειξη: Να τα μετατρέψετε σε ανάγωγα)
+\begin{enumerate}[i)]
+ \item $\dfrac{12}{44}$
+ \item $\dfrac{3}{9}$
+ \item $\dfrac{16}{32}$
+ \item $\dfrac{25}{15}$
+ \item $\dfrac{55}{35}$
+\end{enumerate}
+
+
+
+\section*{Άσκηση 12  \hfill \small{}}
+
+\section*{Άσκηση 13  \hfill \small{}}
+
+
+
+\end{document}

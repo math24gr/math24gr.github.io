@@ -1,0 +1,484 @@
+
+\documentclass[a4paper,10pt]{report}
+
+%\usepackage[landscape]{geometry}
+\usepackage[cm-default]{fontspec}
+\setromanfont{FreeSerif}
+\setsansfont{FreeSans}
+\setmonofont{FreeMono}
+\usepackage[utf8x]{inputenc}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{xgreek}
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\usepackage{ulem}
+\usepackage{color}
+\usepackage{verbatim}
+\usepackage{nopageno}
+\usepackage{graphicx}
+\usepackage{textpos}
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
+%\usepackage[colorgrid,texcoord]{eso-pic}
+\usepackage[outline]{contour}
+\usepackage{wrapfig}
+\usepackage{url}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{fancybox,fancyhdr}
+\usepackage{subfigure}
+\usepackage{pstricks}
+\usepackage{epsfig}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\hypersetup{
+  bookmarks=true,
+  bookmarksopen=true,
+  pdfborder=false,
+  pdfpagemode=UseNone,
+  raiselinks=true,
+  pdfhighlight={/P},
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=black
+}
+
+
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+
+
+% Margins
+%\setlength{\textwidth}{24cm}
+
+%\setlength{\voffset}{0in}
+%\setlength{\textheight}{6.8in}
+% Colors
+\definecolor{cbrown}{rgb}{0.49,0.24,0.07}
+\definecolor{cmpez}{rgb}{0.92,0.88,0.79}
+\definecolor{cmpez2}{rgb}{0.62,0.33,0.34}
+\definecolor{cwhite}{rgb}{1,1,1}
+\definecolor{cblack}{rgb}{0,0,0}
+\definecolor{cred}{rgb}{0.9,0.15,0.15}
+\definecolor{clblue}{rgb}{0.57,0.85,0.97}
+\definecolor{corange}{rgb}{0.86,0.49,0.18}
+\definecolor{clorange}{rgb}{0.95,0.84,0.61}
+\definecolor{cyellow}{rgb}{1,0.95,0.16}
+\definecolor{cgreen}{rgb}{0.69,0.8,0.31}
+\definecolor{clbrown}{rgb}{0.78,0.67,0.43}
+\definecolor{cmagenta}{rgb}{0.79,0.05,0.54}
+\definecolor{cgray}{rgb}{0.76,0.73,0.63}
+\definecolor{bluesite}{rgb}{0.05,0.43,0.67}
+\definecolor{redsite}{rgb}{0.90,0.15,0.15}
+\definecolor{backsite}{rgb}{0.07,0.07,0.07}
+% ----------- from Costas -----------------------------
+
+%---------------   Main Fonts    -----------------%   
+
+% \setmainfont[Mapping=tex-text]{Calibri}
+% \setmainfont[Mapping=tex-text]{Times New Roman}
+%\setmainfont[Mapping=tex-text]{Droid Serif}
+%\setmainfont[Mapping=tex-text]{Cambria}
+%\setmainfont[Mapping=tex-text]{cm-unicode}
+% \setmainfont[Mapping=tex-text]{Gentium}
+% \setmainfont[Mapping=tex-text]{GFS Didot}
+% \setmainfont[Mapping=tex-text]{Comic Sans MS}
+ \setmainfont[Mapping=tex-text]{Ubuntu}
+% \setmainfont[Mapping=tex-text]{Myriad Pro}
+% \setmainfont[Mapping=tex-text]{CMU Concrete}
+%\setmainfont[Mapping=tex-text]{DejaVu Sans}
+%\setmainfont[Mapping=tex-text]{KerkisSans}
+%\setmainfont[Mapping=tex-text]{KerkisCaligraphic}
+% \setmainfont[Mapping=tex-text]{Segoe Print}
+% \setmainfont[Mapping=tex-text]{Gabriola}
+
+%------------------------------------------------%
+
+% ------------ Mathematics Fonts ----------------%
+\setmathfont{Asana-Math.ttf}
+% -----------------------------------------------%
+% Misc
+\author{Κασωτάκη Ε. - Σμαραγδάκης Κ.}
+\title{www.math24.gr}
+% ---------------- Formation --------------------%
+
+
+\setlength\topmargin{-0.7cm}
+\addtolength\topmargin{-\headheight}
+\addtolength\topmargin{-\headsep}
+\setlength\textheight{26cm}
+\setlength\oddsidemargin{-0.54cm}
+\setlength\evensidemargin{-0.54cm}
+%\setlength\marginparwidth{1.5in}
+\setlength\textwidth{17cm}
+
+\RequirePackage[avantgarde]{quotchap}
+\renewcommand\chapterheadstartvskip{\vspace*{0\baselineskip}}
+\RequirePackage[calcwidth]{titlesec}
+\titleformat{\section}[hang]{\bfseries}
+{\Large\thesection}{12pt}{\Large}[{\titlerule[0.9pt]}]
+%--------------------------------------------------%
+\usepackage{draftwatermark}
+\SetWatermarkText{www.math24.gr}
+\SetWatermarkLightness{0.9}
+\SetWatermarkScale{0.6}
+%--------------------------------------------------%
+
+
+\usepackage{xcolor}
+\usepackage{amsthm}
+\usepackage{framed}
+\usepackage{parskip}
+
+\colorlet{shadecolor}{bluesite!20}
+
+\newtheorem*{orismos}{Ορισμός}
+
+\newenvironment{notation}
+  {\begin{shaded}\begin{theorem}}
+  {\end{theorem}\end{shaded}}
+
+
+
+
+% Document begins
+\begin{document}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\fancyhead[LO,LE]{
+ %\textblockcolor{backsite}
+ %\begin{textblock}{5}(-2,-0.55)
+  %\rule{0cm}{1cm}
+ %\end{textblock}
+ \textblockcolor{bluesite}
+ \begin{textblock}{5}(-1.5,-0.55)
+  \rule{0cm}{1cm}
+ \end{textblock}
+ %\textblockcolor{bluesite}
+ %\begin{textblock}{14}(5.5,-0.55)
+ % \rule{0cm}{1cm}
+ %\end{textblock}
+ \begin{textblock}{0}(-1,-0.25)
+ \color{cwhite} \begin{Large}www.math24.gr\end{Large}
+ \end{textblock}
+\begin{textblock}{0}(16,-0.4)
+ \color{cwhite} \includegraphics[height=1.5cm]{math24_logo.png}
+ \end{textblock}
+\textblockcolor{white}
+\begin{textblock}{17}(-1,28)
+ \color{backsite} \begin{small}Copyright \textcopyright 2011, Κασωτάκη Ε.(ikasotaki@gmail.com) - Σμαραγδάκης Κ.(kesmarag@gmail.com)\end{small}
+ \end{textblock}
+}
+ \begin{shaded}
+\begin{center}
+\huge \textbf{Μαθηματικά Α' Γυμνασίου}\\
+\end{center} 
+\begin{center}
+\textbf{"Επαναληπτικές Ασκήσεις για τις διακοπές του Πάσχα στην Άλγεβρα"} \hfill \textbf{}
+\end{center}
+%\subsection*{}
+\end{shaded}
+%\vspace{2em
+%\begin{shaded}
+%\begin{center}
+%\huge \textbf{Επαναληπτικές Ασκήσεις για το Κεφάλαιο 1}\\
+%Πρόσθεση ρητών αριθμών
+%\end{center} 
+%\textbf{Μαθηματικά Α' Γυμνασίου} \hfill \textbf{Ημερομηνία Παράδοσης : \hspace{2em} }
+%\subsection*{Ονοματεπώνυμο :\hfill  \hspace{5em}}
+%\end{shaded}
+\vspace{2em}
+\begin{itemize}
+\item Κεφάλαιο 1: Φυσικοί αριθμοί 
+\item Κεφάλαιο 2: Κλάσματα
+\item Κεφάλαιο 3: Δεκαδικοί αριθμοί 
+\item Κεφάλαιο 4: Εξισώσεις
+\item Κεφάλαιο 7: Θετικοί και αρνητικοί αριθμοί
+\end{itemize}
+
+
+\section*{Άσκηση 1  \hfill \small{}}
+Να βρείτε το $ΕΚΠ$ και το $ΜΚΔ$  των παρακάτω αριθμών:
+\begin{multicols}{2}
+\begin{enumerate}[1)]
+ \item 15 και 20
+ \item 11 και 22
+ \item 12 και 18
+ \item 14 και 34
+ \item 21 και 44
+ \item 111 και 444
+ \item 183 και 346
+ \item 225 και 730
+ \item 500 και 5000
+ \item 128 και 1024
+\end{enumerate}
+\end{multicols}
+
+
+\section*{Άσκηση 2  \hfill \small{}}
+Για κάθε ένα από τους παρακάτω αριθμούς να γράψετε το ανάπτυγμα το ανάπτυγμα του με με χρήση των δυνάμεων του 10.
+\begin{multicols}{2}
+\begin{enumerate}[1)]
+ \item 8231
+ \item 1345
+ \item 2628
+ \item 3344
+ \item 6782
+ \item 13435
+ \item 37373
+ \item 44444
+ \item 50000
+\end{enumerate}
+\end{multicols}
+
+
+
+\section*{Άσκηση 3  \hfill \small{}}
+Να γράψετε ένα \textbf{ναι} ή ένα \textbf{όχι} στις κενές θέσεις του παρακάτω πίνακα σύμφωνα με το εάν οι αριθμοί 
+που δίνονται διαιρούνται με τους 2,3,4,5,9,19,25 και 100.
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+             & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{9} & \textbf{10} & \textbf{25} & \textbf{100}\\
+\hline
+\textbf{100} &  &  &  &  &  &  &  & \\
+\hline
+\textbf{111} &  &  &  &  &  &  &  & \\
+\hline
+\textbf{112} &  &  &  &  &  &  &  & \\
+\hline
+\textbf{313} &  &  &  &  &  &  &  & \\
+\hline
+\textbf{414} &  &  &  &  &  &  &  & \\
+\hline
+\textbf{650} &  &  &  &  &  &  &  & \\
+\hline
+\textbf{7213} & &  &  &  & &  &  & \\
+\hline
+\textbf{8291} & &  & &  &  &  &  & \\
+\hline
+\textbf{9225} & &  &  &  &  &  &  & \\
+\hline
+\textbf{9999} & &  &  & &  &  &  & \\
+\hline
+\end{tabular}
+\end{center}
+
+
+
+\section*{Άσκηση 4  \hfill \small{}}
+Να απλοποιήσετε τα παρακάτω κλάσματα:
+\begin{multicols}{2}
+\begin{enumerate}[1)]
+ \item $\dfrac{4}{16}$
+ \item $\dfrac{81}{42}$
+ \item $\dfrac{120}{66}$
+ \item $\dfrac{4\cdot 3\cdot 5}{15\cdot16\cdot12}$
+ \item $\dfrac{3\cdot 22\cdot\cdot 100}{4\cdot 44\cdot 200}$
+ \item $\dfrac{2^{3}\cdot4^{3}\cdot5^{2}\cdot25}{8\cdot100\cdot16}$
+ \item $\dfrac{2^{3}\cdot3^{4}\cdot5^{6}}{2^{2}\cdot3^{3}\cdot5^{5}}$
+ \item $\dfrac{12\cdot18\cdot20}{6\cdot4\cdot5}$
+ \item $\dfrac{7^{2}\cdot21\cdot3^{4}}{7^{3}\cdot3^{5}}$
+ \item $\dfrac{25\cdot30\cdot2^{2}}{5^{2}\cdot20}$
+\end{enumerate}
+\end{multicols}
+
+
+
+\section*{Άσκηση 5  \hfill \small{}}
+Να εξετάσετε εάν τα παρακάτω κλάσματα είναι ισοδύναμα:
+\begin{multicols}{2}
+\begin{enumerate}[1)]
+ \item $\dfrac{1}{2}$ και $\dfrac{1}{3}$
+ \item $\dfrac{3}{4}$ και $\dfrac{6}{8}$
+ \item $\dfrac{7}{2}$ και $\dfrac{2}{7}$
+ \item $\dfrac{8}{3}$ και $\dfrac{4}{6}$
+ \item $\dfrac{2}{11}$ και $\dfrac{4}{22}$
+ \item $\dfrac{10}{30}$ και $\dfrac{10}{40}$
+ \item $\dfrac{10}{30}$ και $\dfrac{2}{15}$
+ \item $\dfrac{3}{16}$ και $\dfrac{6}{32}$
+ \item $\dfrac{3}{12}$ και $\dfrac{1}{4}$
+ \item $\dfrac{8}{80}$ και $\dfrac{1}{10}$
+\end{enumerate}
+\end{multicols}
+
+
+
+\section*{Άσκηση 6  \hfill \small{}}
+Να βρείτε τους αντίστροφους των παρακάτω αριθμών:
+\begin{multicols}{2}
+\begin{enumerate}[1)]
+ \item $13$
+ \item $\dfrac{2}{7}$
+ \item $\dfrac{5}{3}$
+ \item $\dfrac{1}{6}$
+ \item $\dfrac{2}{20}$
+ \item $117$
+ \item $\dfrac{13}{27}$
+ \item $\dfrac{81}{3}$
+ \item $\dfrac{4}{32}$
+ \item $1$
+\end{enumerate}
+\end{multicols}
+
+\section*{Άσκηση 7  \hfill \small{}}
+Να γράψετε τα παρακάτω κλάσματα ως δεκαδικούς αριθμούς:
+\begin{multicols}{2}
+\begin{enumerate}[1)]
+ \item $\dfrac{71}{10}$
+ \item $\dfrac{88}{100}$
+ \item $\dfrac{3}{1000}$
+ \item $\dfrac{27}{10}$
+ \item $\dfrac{600}{10}$
+ \item $\dfrac{20}{4}$
+ \item $\dfrac{11}{2}$
+ \item $\dfrac{4}{25}$
+ \item $\dfrac{1}{5}$
+ \item $\dfrac{36}{6}$
+\end{enumerate}
+\end{multicols}
+
+
+
+\section*{Άσκηση 8  \hfill \small{}}
+Να γράψετε ως δεκαδικά κλάσματα κάθε ένα από τους παρακάτω δεκαδικούς αριθμούς:
+\begin{multicols}{2}
+\begin{enumerate}[1)]
+ \item $1,1$
+ \item $0,91$
+ \item $7,01$
+ \item $0,133$
+ \item $78,2$
+ \item $41,41$
+ \item $0,007$
+ \item $8,088$
+ \item $0,096$
+ \item $71,006$
+\end{enumerate}
+\end{multicols}
+
+
+\section*{Άσκηση 9  \hfill \small{}}
+Για κάθε ένα από τους παρακάτω αριθμούς να βρείτε τον αντίθετο τους:
+\begin{multicols}{2}
+\begin{enumerate}[1)]
+ \item $4$
+ \item $\dfrac{2}{3}$
+ \item $-\dfrac{4}{5}$
+ \item $-\dfrac{1}{6}$
+ \item $\dfrac{4}{9}$
+ \item $\dfrac{8}{16}$
+ \item $9,54$
+ \item $-3$
+ \item $-22,81$
+ \item $81$
+\end{enumerate}
+\end{multicols}
+
+\section*{Άσκηση 10  \hfill \small{}}
+Να υπολογίσετε το αποτέλεσμα για κάθε μία από τις παρακάτω αριθμητικές παραστάσεις εφαρμόζοντας πρώτα την 
+επιμεριστική ιδιότητα:
+%\begin{multicols}{2}
+\begin{enumerate}[1)]
+ \item $2\cdot (3+7+\dfrac{1}{2}+\dfrac{6}{4}-\dfrac{3}{2})$
+ \item $10\cdot (8,1-0,1-40-\dfrac{7}{10}+\dfrac{40}{100})$
+ \item $100\cdot (-0,02+0,01+\dfrac{73}{100}-\dfrac{80}{100})$
+ \item $4\cdot(0,25+\dfrac{8}{4}+\dfrac{1}{16})-\dfrac{8}{32}+
+        2\cdot(-0,05+\dfrac{1}{2}+4^{2}-\dfrac{32}{2})$
+ \item $3\cdot (\dfrac{11}{3}+|2|-\dfrac{5}{3})+\dfrac{2}{6}
+       -|-2|\cdot(\dfrac{8}{3}-\dfrac{8}{12}+\dfrac{1}{2})$
+ \item $2^{2}\cdot(3-7+\dfrac{8}{12})-3^{2}\cdot(0-1+\dfrac{1}{9})$
+ \item $\dfrac{1}{2}\cdot(\dfrac{4}{2}-\dfrac{8}{6}-\dfrac{1}{4})
+       +\dfrac{1}{3}\cdot(\dfrac{2}{4}-\dfrac{3}{2})$
+ \item $6\cdot(1-\dfrac{36}{3}-\dfrac{18}{2})-|3|\cdot(|-1|+|0|+|-7|)$
+ \item $2\cdot (\dfrac{4}{2}+\dfrac{3}{2}+\dfrac{2}{2})
+       -3\cdot(\dfrac{1}{3}+\dfrac{2}{3}+\dfrac{4}{3})$
+ \item $4\cdot (-\dfrac{6}{2^{2}}-\dfrac{4}{2^{2}})
+        +3^{2}\cdot(\dfrac{9}{27}-\dfrac{6}{27})$
+\end{enumerate}
+%\end{multicols}
+
+\section*{Άσκηση 11  \hfill \small{}}
+Να βρείτε το αποτέλεσμα των παρακάτω αριθμητικών παραστάσεων χρησιμοποιώντας το αντίστροφο 
+της επιμεριστικής ιδιότητας:
+%\begin{multicols}{2}
+\begin{enumerate}[1)]
+ \item $7\cdot 3+3\cdot 2+3$
+ \item $0,72\cdot10+0,72\cdot30-0,72\cdot4-0,72\cdot6-0,72\cdot70$
+ \item $\dfrac{1}{2}\cdot3+2\cdot \dfrac{1}{2}+\dfrac{1}{2}-20\cdot \dfrac{1}{2}+10\cdot \dfrac{1}{2}$
+ \item $3,68\cdot \dfrac{2}{10}+3,68\cdot \dfrac{3}{10}+3,68\cdot \dfrac{5}{10}
+        -3,68\cdot \dfrac{3}{10}-3,68\cdot \dfrac{4}{10}+3,68\cdot \dfrac{7}{10}$
+ \item $5\cdot |-4|+5\cdot |-3|+5\cdot |+2|-5\cdot |-3|+5\cdot |-1|$
+ \item $\dfrac{1}{2}\cdot \dfrac{50}{4}-\dfrac{1}{2}\cdot \dfrac{60}{5}+\dfrac{1}{2}\cdot \dfrac{15}{10}$
+\end{enumerate}
+%\end{multicols}
+
+
+\section*{Άσκηση 12  \hfill \small{}}
+Να βάλετε σε αύξουσα σειρά τους παρακάτω αριθμούς:
+%\begin{multicols}{2}
+\begin{enumerate}[1)]
+ \item $-7, 3,-3,0,9,20$
+ \item $|-7|,-9,-4,|8|,21$
+ \item $\dfrac{5}{2},-\dfrac{1}{2},\dfrac{4}{2},-\dfrac{7}{2},\dfrac{9}{2}$
+ \item $-\dfrac{6}{25},\dfrac{6}{9},-\frac{6}{7},\dfrac{6}{5},\frac{6}{41}$
+ \item $-\dfrac{6}{4},-\dfrac{2}{5},\dfrac{15}{10},\dfrac{70}{20},\dfrac{21}{2}$
+ \item $-7,1\quad,\quad-7,2\quad,\quad 0 \quad ,\quad 7,6 \quad , \quad 7,7$
+ \item $11,81\quad,\quad-13,71\quad,\quad 0 \quad ,\quad -47,2 \quad , \quad 7,8$
+ \item $2^{2},-3^{2},-9^{2},3^{3},4^{2}$
+ \item $8,6\quad , \quad 0, -\dfrac{1}{2},|-70|,-70$
+ \item $-\dfrac{1}{3},-\dfrac{5}{4},\dfrac{3}{2},\dfrac{6}{6},0$
+\end{enumerate}
+%\end{multicols}
+
+
+\section*{Άσκηση 13  \hfill \small{}}
+Να τοποθετήσετε στην ευθεία των αριθμών τους παρακάτω αριθμούς:
+%\begin{multicols}{2}
+\begin{enumerate}[1)]
+ \item $0,-5,4$
+ \item $-\dfrac{1}{4},-1,0,\dfrac{1}{2}$
+ \item $\dfrac{5}{2},-2,2,\dfrac{3}{2}$
+ \item $\dfrac{3}{2},\dfrac{3}{2},\dfrac{5}{2},\dfrac{1}{2}$
+ \item $-|2|,-|-3|,|7|,|-1|$
+\end{enumerate}
+%\end{multicols}
+
+\section*{Άσκηση 14  \hfill \small{}}
+Να υπολογίσετε τις τιμές των παρακάτω αριθμητικών παραστάσεων:
+%\begin{multicols}{2}
+\begin{enumerate}[1)]
+ \item $2\cdot (4-3-7+6)+71\cdot(81-80-22+4+6+2)$
+ \item $3\cdot \dfrac{7}{3}+3,1\cdot 10-2\cdot 2^{3}-1-81$
+ \item $\dfrac{4}{3}\cdot \dfrac{5}{2}-\dfrac{1}{2}\cdot (3-2)+|-1|$
+ \item 
+\end{enumerate}
+%\end{multicols}
+
+\section*{Άσκηση 15  \hfill \small{}}
+\begin{multicols}{2}
+\begin{enumerate}[1)]
+ \item 
+\end{enumerate}
+\end{multicols}
+
+\section*{Άσκηση 16  \hfill \small{}}
+\begin{multicols}{2}
+\begin{enumerate}[1)]
+ \item 
+\end{enumerate}
+\end{multicols}
+
+\end{document}
