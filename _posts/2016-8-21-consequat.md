@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Δημοτικό
-description: Μαθηματικά
+description: Μαθηματικα
 #image: assets/images/pic05.jpg
 ---
 
