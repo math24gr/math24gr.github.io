@@ -16,10 +16,11 @@
 title: math24.gr
 email: ikasotaki@gmail.com
 phone: 6946117085
+adress: Ηράκλειο Κρήτης
 description: >- # this means to ignore newlines until "baseurl:"
-  Καλώς ήρθατε στο math24! Εδώ μπορείτε να βρείτε ασκήσεις μαθηματικών και άλλων θετικών 
-  επιστημών για μαθητές δημοτικού, γυμνασίου και λυκείου. Καθώς επίσης και δραστηριότητες 
-  για παιδιά προσχολικής ηλικίας.
+  Καλως ηρθατε στο math24! Εδω μπορειτε να βρειτε ασκησεις μαθηματικων και αλλων θετικων 
+  επιστημων για μαθητες δημοτικου, γυμνασιου και λυκειου. Καθως επισης και δραστηριοτητες 
+  για παιδια προσχολικης ηλικιας.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ikasotaki
