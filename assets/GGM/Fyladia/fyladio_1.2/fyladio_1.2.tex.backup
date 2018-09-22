@@ -1,0 +1,378 @@
+
+\documentclass[a4paper,10pt]{report}
+
+%\usepackage[landscape]{geometry}
+\usepackage[cm-default]{fontspec}
+\setromanfont{FreeSerif}
+\setsansfont{FreeSans}
+\setmonofont{FreeMono}
+\usepackage[utf8x]{inputenc}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{xgreek}
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\usepackage{ulem}
+\usepackage{color}
+\usepackage{verbatim}
+\usepackage{nopageno}
+\usepackage{graphicx}
+\usepackage{textpos}
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
+%\usepackage[colorgrid,texcoord]{eso-pic}
+\usepackage[outline]{contour}
+\usepackage{wrapfig}
+\usepackage{url}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{fancybox,fancyhdr}
+\usepackage{subfigure}
+\usepackage{pstricks}
+\usepackage{epsfig}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\hypersetup{
+  bookmarks=true,
+  bookmarksopen=true,
+  pdfborder=false,
+  pdfpagemode=UseNone,
+  raiselinks=true,
+  pdfhighlight={/P},
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=black
+}
+
+
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+
+
+% Margins
+%\setlength{\textwidth}{24cm}
+
+%\setlength{\voffset}{0in}
+%\setlength{\textheight}{6.8in}
+% Colors
+\definecolor{cbrown}{rgb}{0.49,0.24,0.07}
+\definecolor{cmpez}{rgb}{0.92,0.88,0.79}
+\definecolor{cmpez2}{rgb}{0.62,0.33,0.34}
+\definecolor{cwhite}{rgb}{1,1,1}
+\definecolor{cblack}{rgb}{0,0,0}
+\definecolor{cred}{rgb}{0.9,0.15,0.15}
+\definecolor{clblue}{rgb}{0.57,0.85,0.97}
+\definecolor{corange}{rgb}{0.86,0.49,0.18}
+\definecolor{clorange}{rgb}{0.95,0.84,0.61}
+\definecolor{cyellow}{rgb}{1,0.95,0.16}
+\definecolor{cgreen}{rgb}{0.69,0.8,0.31}
+\definecolor{clbrown}{rgb}{0.78,0.67,0.43}
+\definecolor{cmagenta}{rgb}{0.79,0.05,0.54}
+\definecolor{cgray}{rgb}{0.76,0.73,0.63}
+\definecolor{bluesite}{rgb}{0.05,0.43,0.67}
+\definecolor{redsite}{rgb}{0.90,0.15,0.15}
+\definecolor{backsite}{rgb}{0.07,0.07,0.07}
+% ----------- from Costas -----------------------------
+
+%---------------   Main Fonts    -----------------%   
+
+% \setmainfont[Mapping=tex-text]{Calibri}
+% \setmainfont[Mapping=tex-text]{Times New Roman}
+%\setmainfont[Mapping=tex-text]{Droid Serif}
+%\setmainfont[Mapping=tex-text]{Cambria}
+%\setmainfont[Mapping=tex-text]{cm-unicode}
+% \setmainfont[Mapping=tex-text]{Gentium}
+% \setmainfont[Mapping=tex-text]{GFS Didot}
+% \setmainfont[Mapping=tex-text]{Comic Sans MS}
+ \setmainfont[Mapping=tex-text]{Ubuntu}
+% \setmainfont[Mapping=tex-text]{Myriad Pro}
+% \setmainfont[Mapping=tex-text]{CMU Concrete}
+%\setmainfont[Mapping=tex-text]{DejaVu Sans}
+%\setmainfont[Mapping=tex-text]{KerkisSans}
+%\setmainfont[Mapping=tex-text]{KerkisCaligraphic}
+% \setmainfont[Mapping=tex-text]{Segoe Print}
+% \setmainfont[Mapping=tex-text]{Gabriola}
+
+%------------------------------------------------%
+
+% ------------ Mathematics Fonts ----------------%
+\setmathfont{Asana-Math.ttf}
+% -----------------------------------------------%
+% Misc
+\author{Κασωτάκη Ε. - Σμαραγδάκης Κ.}
+\title{www.math24.gr}
+% ---------------- Formation --------------------%
+
+
+\setlength\topmargin{-0.7cm}
+\addtolength\topmargin{-\headheight}
+\addtolength\topmargin{-\headsep}
+\setlength\textheight{26cm}
+\setlength\oddsidemargin{-0.54cm}
+\setlength\evensidemargin{-0.54cm}
+%\setlength\marginparwidth{1.5in}
+\setlength\textwidth{17cm}
+
+\RequirePackage[avantgarde]{quotchap}
+\renewcommand\chapterheadstartvskip{\vspace*{0\baselineskip}}
+\RequirePackage[calcwidth]{titlesec}
+\titleformat{\section}[hang]{\bfseries}
+{\Large\thesection}{12pt}{\Large}[{\titlerule[0.9pt]}]
+%--------------------------------------------------%
+\usepackage{draftwatermark}
+\SetWatermarkText{www.math24.gr}
+\SetWatermarkLightness{0.9}
+\SetWatermarkScale{0.6}
+%--------------------------------------------------%
+
+
+\usepackage{xcolor}
+\usepackage{amsthm}
+\usepackage{framed}
+\usepackage{parskip}
+
+\colorlet{shadecolor}{bluesite!20}
+
+\newtheorem*{orismos}{Ορισμός}
+
+\newenvironment{notation}
+  {\begin{shaded}\begin{theorem}}
+  {\end{theorem}\end{shaded}}
+
+
+
+
+% Document begins
+\begin{document}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\fancyhead[LO,LE]{
+ %\textblockcolor{backsite}
+ %\begin{textblock}{5}(-2,-0.55)
+  %\rule{0cm}{1cm}
+ %\end{textblock}
+ \textblockcolor{bluesite}
+ \begin{textblock}{5}(-1.5,-0.55)
+  \rule{0cm}{1cm}
+ \end{textblock}
+ %\textblockcolor{bluesite}
+ %\begin{textblock}{14}(5.5,-0.55)
+ % \rule{0cm}{1cm}
+ %\end{textblock}
+ \begin{textblock}{0}(-1,-0.25)
+ \color{cwhite} \begin{Large}www.math24.gr\end{Large}
+ \end{textblock}
+\begin{textblock}{0}(16,-0.4)
+ \color{cwhite} \includegraphics[height=1.5cm]{math24_logo.png}
+ \end{textblock}
+\textblockcolor{white}
+\begin{textblock}{17}(-1,28)
+ \color{backsite} \begin{small}Copyright \textcopyright 2012, Κασωτάκη Ε.(ikasotaki@gmail.com) - Σμαραγδάκης Κ.(kesmarag@gmail.com)\end{small}
+ \end{textblock}
+}
+ 
+\begin{shaded}
+\begin{center}
+\huge \textbf{Φυλλάδιο Ασκήσεων}\\
+%Πρόσθεση ρητών αριθμών
+\end{center} 
+\textbf{Μαθηματικά Γ' Γυμνασίου} \hfill \textbf{Ημερομηνία Παράδοσης : \hspace{2em} }
+\subsection*{Ονοματεπώνυμο :\hfill  \hspace{5em}}
+\end{shaded}
+\vspace{2em}
+\begin{itemize}
+ \item Αριθμητικές και αλγεβρικές παραστάσεις
+ \item Ακέραια αλγεβρική παράσταση
+ \item Αριθμητική τιμή
+ \item Μονώνυμα
+ \item Συντελεστής, κύριο μέρος και βαθμός μονωνύμων
+ \item Όμοια, ίσα και αντίθετα μονώνυμα
+ \item Σταθερό και μηδενικό μονώνυμο
+\end{itemize}
+
+\section*{Θεωρία  \hfill \small{}}
+\begin{itemize}
+\item \textbf{Αριθμητικές παραστάσεις} ονομάζονται οι εκφράσεις που περιέχουν μόνο αριθμούς 
+       (αριθμούς που συνδέονται με πράξεις).\\
+       \textbf{Π.χ} $4+3$ \\
+       \textbf{Π.χ} $12\cdot 4 -3^{2}+7\cdot 8$ 
+\item \textbf{Αλγεβρικές παραστάσεις} ονομάζονται οι εκφράσεις που περιέχουν αριθμούς και μεταβλητές 
+       (που συνδέονται με πράξεις).\\
+       \textbf{Π.χ} $4xy^{2}$ \\
+       \textbf{Π.χ} $8x+9y^{2}+xy$ \\
+       \textbf{Π.χ} $\dfrac{3x^{2}}{4y}$ 
+\end{itemize}
+
+
+\section*{Θεωρία  \hfill \small{}}
+\begin{itemize}
+ \item \textbf{Ακέραια} αλγεβρική παράσταση ονομάζεται μία αλγεβρική παράσταση όταν μεταξύ των 
+        μεταβλητών της σημειώνονται μόνο οι πράξεις της πρόσθεσης και του πολλαπλασιασμού και 
+        οι εκθέτες των μεταβλητών της είναι φυσικοί αριθμοί.\\
+        \textbf{Π.χ} $4x^{3}+5x$
+ \item \textbf{Αριθμητική τιμή} ή \textbf{τιμή} μιας αλγεβρικής παράστασης ονομάζεται ο αριθμός που 
+        θα προκύψει εάν αντικαταστήσουμε τις μεταβλητές της αλγεβρικής παράστασης με αριθμούς και 
+        κάνουμε τις πράξεις.\\
+        \textbf{Π.χ} Η αλγεβρική παράσταση $x^{2}+3x$ για $x=2$ έχει τιμή $10$ γιατί: $2^{2}=3\cdot 2=4+6=10$
+\end{itemize}
+
+
+
+\section*{Άσκηση 1  \hfill \small{ μονάδες}}
+Να βρείτε την αλγεβρική τιμή των παρακάτω αλγεβρικών παραστάσεων:
+\begin{enumerate}
+ \item $4x^{3}-2x+17y$ για $x=2$ και $y=1$
+ \item $3x^{2}y-2xy^{2}$ για $x=-1$ και $y=3$ 
+ \item $12αβ^{2}+18α^{2}β$ για $α=\dfrac{1}{3}$  και $β=\dfrac{1}{2}$
+ \item $2\sqrt{x}+xy^{2}-\dfrac{1}{2}x^{2}y$ για $x=4$ και $y=5$
+\end{enumerate}
+
+\section*{Θεωρία  \hfill \small{}}
+\begin{itemize}
+ \item \textbf{Μονώνυμα} ονομάζονται οι ακέραιες αλγεβρικές παραστάσεις στις οποίες μεταξύ των μεταβλητών σημειώνεται 
+       μόνο η πράξη του πολλαπλασιασμού.\\
+       \textbf{Π.χ} $\quad 5x^{3}$ \\
+       \textbf{Π.χ} $\quad 7y^{2}$ \\
+       \textbf{Π.χ} $\quad 2x^{4}y^{5}$
+ \item \textbf{Συντελεστής} του μονωνύμου ονομάζεται ο αριθμητικός παράγοντας του. \\
+       \textbf{Π.χ} το μονώνυμο $6x^{2}$ έχει συντελεστή το $6$
+ \item \textbf{Κύριο μέρος} του μονωνύμου ονομάζεται το γινόμενο όλων των μεταβλητών με τους 
+       αντίστοιχους εκθέτες τους.\\
+       \textbf{Π.χ} το μονώνυμο $7xy^{2}$ έχει κύριο μέρος το $xy^{2}$
+ \item \textbf{Βαθμός} του μονωνύμου 
+        \begin{itemize}
+         \item  \textbf{ως προς μία μεταβλητή} είναι ο εκθέτης της μεταβλητής αυτής
+         \item  \textbf{ως προς όλες τις μεταβλητές} είναι το άθροισμα των εκθετών των μεταβλητών του 
+        \end{itemize}
+       \textbf{Π.χ} το μονώνυμο $4x^{2}y^{5}$ 
+       \begin{itemize}
+        \item είναι δευτέρου βαθμού ως προς τη μεταβλητή $x$ 
+        \item είναι πέμπτου βαθμού ως προς τη μεταβλητή $y$ 
+        \item είναι έβδομου βαθμού ως προς τις μεταβλητές $x$ και  $y$ 
+        \end{itemize}
+\end{itemize}
+
+
+\section*{Άσκηση 2  \hfill \small{ μονάδες}}
+Να συμπληρώσετε τον παρακάτω πίνακα επιλέγοντας \textbf{"X"} στην κατάλληλη θέση:
+\begin{center}
+ \begin{tabular}{|c|c|c|}
+\hline                   
+        \textbf{Αλγεβρική παράσταση} &  \textbf{Είναι μονώνυμο} & \textbf{Δεν είναι μονώνυμο}     \\
+\hline 
+$2x+5x^{2}$                          &                          &        \\
+\hline
+$6x^{3}y$                            &                          &   \\
+\hline
+$\dfrac{7}{2}xy^{2}$                 &                          &   \\
+\hline
+$3\dfrac{x^{2}}{y}$                  &                          &   \\
+\hline
+$y^{3}x^{5}$                         &                           &  \\
+\hline
+\end{tabular}
+\end{center}
+
+
+
+
+
+
+
+
+\section*{Άσκηση 3  \hfill \small{ μονάδες}}
+Να συμπληρώσετε τον παρακάτω πίνακα: 
+\begin{center}
+ \begin{tabular}{|c|c|c|c|c|c|}
+\hline                   
+ \textbf{Μονώνυμο}& \textbf{Συντελεστής} &\textbf{Κύριο μέρος} & \textbf{Βαθμός ως προς $x$}  &  \textbf{Βαθμός ως προς $y$}  & \textbf{Βαθμός ως προς $x$ και $y$}    \\
+\hline 
+$3x^{2}y^{3}$   &   &   & &  & \\
+\hline
+$4xy^{2}$   &   &   &   &  & \\
+\hline
+$\dfrac{2}{7}$ &  & &  &  & \\
+\hline
+$-\sqrt{5}x^{5}$ &  & & & & \\
+\hline
+$-xy^{4}$  & & & & & \\
+\hline
+\end{tabular}
+\end{center}
+
+\section*{Θεωρία  \hfill \small{}}
+\begin{itemize}
+ \item \textbf{Όμοια} ονομάζονται τα μονώνυμα που έχουν το ίδιο κύριο μέρος.\\
+       \textbf{Π.χ} \quad $3x^{2}y$ και $-7x^{2}y$ είναι όμοια        
+ \item \textbf{}
+ \item \textbf{}
+\end{itemize}
+
+
+\section*{Άσκηση 4  \hfill \small{ μονάδες}}
+Να αντιστοιχίσετε κάθε μονώνυμο της αριστερής στήλης με ένα όμοιο μονώνυμο της δεξιάς στήλης
+\begin{itemize}
+\begin{multicols}{2}
+ \item $3xy^{2}$
+ \item $-\sqrt{2}x^{3}y^{3}$
+ \item $(-4x^{5}$
+ \item $2x^{2}y^{2}$
+ \item $(3x^{2}y$
+%---------------------------------
+ \item $-9x^{5}$
+ \item $5xy^{2}$
+ \item $-9x^{2}y^{2}$
+ \item $10x^{3}y^{3}$
+ \item $\sqrt{5}x^{2}y$
+\end{multicols}
+\end{itemize}
+
+
+
+\section*{Άσκηση 5  \hfill \small{}  μονάδες}
+Να βρείτε ένα μονώνυμο
+\begin{enumerate}
+ \item που έχει συντελεστή $6$ και κύριο μέρος $x^{5}y^{3}$
+ \item που είναι ίσο με το $7xy^{2}$
+ \item που είναι αντίθετο με το $-13x^{3}y^{2}$
+ \item που έχει συντελεστή $\sqrt{2}$ και είναι όμοιο με το $5x^{4}y^{3}$ 
+ \item που έχει συντελεστή $2$ και μεταβλητές $x$ και $y$, και βαθμό ως προς $x$ είναι $3$ και ως 
+       προς $y$ είναι $4$
+ \item που έχει συντελεστή $-7$ και μεταβλητές $x$ και $y$, και ο βαθμός του ως προς $x$ είναι $4$ 
+       και ο βαθμός του ως προς $x$ και $y$ είναι $5$
+\end{enumerate}
+
+
+
+\section*{Άσκηση 6  \hfill \small{}  μονάδες}
+Να προσδιορίσετε την τιμή του φυσικού αριθμού $ν$ ώστε το μονώνυμο $5x^{2}y^{ν}$ 
+\begin{enumerate}
+ \item να είναι τρίτου βαθμού ως προς $y$
+ \item να είναι τρίτου βαθμού ως προς $x$ και $y$
+\end{enumerate}
+
+ 
+
+
+
+
+
+
+
+
+
+%\let\thefootnote\relax\footnotetext{Επιμέλεια : Κασωτάκη Ειρήνη (ikasotaki@gmail.com),    Σμαραγδάκης Κώστας (kesmarag@gmail.com)} 
+
+
+\end{document}
