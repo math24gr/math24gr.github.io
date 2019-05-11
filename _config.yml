@@ -46,7 +46,7 @@ plugins:
 
 # homepage tiles
 tiles-source: posts # accepts "posts" or "pages"
-tiles-count: 6
+tiles-count: 7
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
