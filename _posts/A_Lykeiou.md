@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Γ Γυμνασίου
-description: Μαθηματικα - Φυσικη - Χημεια
+title: Α Λυκείου
+description: Άλγεβρα
 #image: assets/images/pic03.jpg
 ---
 
