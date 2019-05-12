@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.4.1)  12 MAY 2019 10:42
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.4.1)  12 MAY 2019 10:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Askiseis_3.1.tex
-(./Askiseis_3.1.tex
+**Askiseis_4.1.tex
+(./Askiseis_4.1.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
@@ -1555,8 +1555,8 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 (/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2001/04/09 non-zero parskip adjustments
 )
-(./Askiseis_3.1.aux)
-\openout1 = `Askiseis_3.1.aux'.
+(./Askiseis_4.1.aux)
+\openout1 = `Askiseis_4.1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 152.
 LaTeX Font Info:    ... okay on input line 152.
@@ -1762,9 +1762,9 @@ LaTeX Info: Redefining \ref on input line 152.
 LaTeX Info: Redefining \pageref on input line 152.
 LaTeX Info: Redefining \nameref on input line 152.
 
-(./Askiseis_3.1.out) (./Askiseis_3.1.out)
+(./Askiseis_4.1.out) (./Askiseis_4.1.out)
 \@outlinefile=\write5
-\openout5 = `Askiseis_3.1.out'.
+\openout5 = `Askiseis_4.1.out'.
 
 
 
@@ -1814,20 +1814,20 @@ Overfull \hbox (77.93257pt too wide) has occurred while \output is active
  []
 
 [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 286.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 286.
- (./Askiseis_3.1.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 286.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 286.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 286.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 270.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 270.
+ (./Askiseis_4.1.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 270.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 270.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 270.
  ) 
 Here is how much of TeX's memory you used:
  39883 strings out of 493007
  738051 string characters out of 6136720
- 917318 words of memory out of 5000000
+ 915318 words of memory out of 5000000
  43321 multiletter control sequences out of 15000+600000
  532381 words of font info for 71 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  66i,13n,68p,10419b,501s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Askiseis_3.1.pdf (2 pages).
+Output written on Askiseis_4.1.pdf (2 pages).

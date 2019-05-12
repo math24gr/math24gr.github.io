@@ -102,7 +102,7 @@
 %------------------------------------------------%
 
 % ------------ Mathematics Fonts ----------------%
-%\setmathfont{Asana-Math.ttf}
+\setmathfont{Asana-Math.ttf}
 % -----------------------------------------------%
 % Misc
 \author{Κασωτάκη Ε. - Σμαραγδάκης Κ.}
@@ -125,10 +125,10 @@
 \titleformat{\section}[hang]{\bfseries}
 {\Large\thesection}{12pt}{\Large}[{\titlerule[0.9pt]}]
 %--------------------------------------------------%
-%\usepackage{draftwatermark}
-%\SetWatermarkText{www.math24.gr}
-%\SetWatermarkLightness{0.9}
-%\SetWatermarkScale{0.6}
+\usepackage{draftwatermark}
+\SetWatermarkText{www.math24.gr}
+\SetWatermarkLightness{0.9}
+\SetWatermarkScale{0.6}
 %--------------------------------------------------%
 
 
@@ -178,7 +178,7 @@
  \end{textblock}
 \textblockcolor{white}
 \begin{textblock}{17}(-1,28)
- \color{backsite} \begin{small}Επιμέλεια: Κασωτάκη Ειρήνη (ikasotaki@gmail.com) - Σχολικό έτος 2018 -  2019  \end{small}
+ \color{backsite} \begin{small}Copyright \textcopyright 2012, Κασωτάκη Ε.(ikasotaki@gmail.com) - Σμαραγδάκης Κ.(kesmarag@gmail.com)\end{small}
  \end{textblock}
 }
  \begin{shaded}
@@ -186,7 +186,7 @@
 \huge \textbf{Άλγεβρα Α' Λυκείου}\\
 \end{center} 
 \begin{center}
-\textbf{Επαναληπτικές Ασκήσεις στις Εξισώσεις α' βαθμού } \hfill \textbf{}
+\textbf{Επαναληπτικές Ασκήσεις για τα Κεφάλαια 2 και 3 } \hfill \textbf{}
 \end{center}
 %\subsection*{}
 \end{shaded}
@@ -201,86 +201,139 @@
 %\end{shaded}
 \vspace{2em}
 \begin{itemize}
+\item Διάταξη πραγματικών αριθμών
+\item Απόλυτη τιμή πραγματικών αριθμών
+\item Ρίζες πραγματικών αριθμών
 \item Εξισώσεις α' βαθμού
-%Εξισώσεις α' βαθμού με απόλυτες τιμές
-%Κλασματικές εξισώσεις που ανάγονται σε α' βαθμού
-%Εξισώσεις με ταυτότητες που ανάγονται σε α' βαθμού
+\item Η εξίσωση $x^{ν}=α$
+\item Εξισώσεις β' βαθμού
 \end{itemize}
 
+
 \section*{Άσκηση 1  \hfill \small{}}
-Να λύσετε τις παρακάτω εξισώσεις:
+Αν $1<x<2$ και $2<y<4$, να βρείτε τα όρια μεταξύ των οποίων περιέχεται η τιμή καθεμίας από τις παρακάτω 
+παραστάσεις:
 \begin{enumerate}[1)]
- \item $|4x+5|=|2x+7|$
- \item $|-2x+4|=|x+10|$
- \item $|5x-4|=|7x-1|$
- \item $|3x+5|=|2x-4|$
- \item $|7x+4|=|4-5x|$
+ \item $x+y$
+ \item $x-y$
+ \item $x\cdot y$
+ \item $\dfrac{x}{y}$
+ \item $3x+2y-x\cdot y$
 \end{enumerate}
 
 
 \section*{Άσκηση 2  \hfill \small{}}
 Να λύσετε τις παρακάτω εξισώσεις:
 \begin{enumerate}[1)]
- \item $|3x+5|=x+7$
- \item $|-2x+1|=x+1$
- \item $|5x+1|=x-1$
- \item $|3x+1|=2x-4$
- \item $|3x+4|=4-3x$
+ \item $|x|=3$
+ \item $|x|=4$
+ \item $|x|=|7|$
+ \item $|x|=|11|$
+ \item $|x|=|-2|$
 \end{enumerate}
 
 
-\section*{Άσκηση 3  \hfill \small{}}
+
+\section*{Άσκηση 3*  \hfill \small{}}
 Να λύσετε τις παρακάτω εξισώσεις:
 \begin{enumerate}[1)]
- \item $2(3x+1)=4(x+3)$
- \item $3(2x+3)-3=4-2(x-1)$
- \item $5(x-1)=5x-4$
- \item $2(3x+1)=3(2x-1)+5$
- \item $6(x-3)-2(3x+4)=2(3x-4)$
+ \item $|x+1|=5$
+ \item $|2x+3|=7$
+ \item $|3x|=|x+1|$
+ \item $|2x+2|=|x+1|$
+ \item $|3x+4|=|2x+1|$
 \end{enumerate}
 
 
 
 \section*{Άσκηση 4  \hfill \small{}}
-Να λύσετε τις παρακάτω εξισώσεις:
+Να λύσετε τις παρακάτω ανισώσεις:
 \begin{enumerate}[1)]
- \item $\dfrac{x+5}{4}+\dfrac{2x+1}{2}=\dfrac{x-5}{2} $
- \item $\dfrac{x-5}{2}+\dfrac{2x-1}{3}=\dfrac{x+2}{3} $
- \item $\dfrac{5x+2}{5}-\dfrac{2x+1}{2}=\dfrac{x-3}{2} $
- \item $\dfrac{x-5}{6}+\dfrac{2x+1}{3}=\dfrac{x-2}{4} $
- \item $\dfrac{x-2}{3}-\dfrac{2x-1}{5}=x-1$
+ \item $|x-2|<2$
+ \item $|3-x|\le 5$
+ \item $|x+1|>2$
+ \item $|x-2|\ge 3$
+ \item $|x-2|<3$  και   $|x-1|>1$
 \end{enumerate}
-
 
 
 \section*{Άσκηση 5  \hfill \small{}}
-Να λύσετε τις παρακάτω εξισώσεις:
+Να γράψετε τις παρακάτω παραστάσεις χωρίς απόλυτες τιμές:
 \begin{enumerate}[1)]
-  \item $\dfrac{x+1}{x}+\dfrac{3}{2}=3  $
-  \item $\dfrac{3}{x+1}-\dfrac{2}{x}=\dfrac{1}{x}  $
-  \item $\dfrac{1}{x-2}-\dfrac{2}{x-1}=\dfrac{5}{x-1}  $
-  \item $\dfrac{3}{x-2}-\dfrac{2}{x-1}=\dfrac{3}{x-1}  $
-  \item $\dfrac{x+4}{x^{2}-2x}-\dfrac{1}{x}=\dfrac{3}{x-2}  $
+ \item $|π-3|$
+ \item $|5-2π|$
+ \item $|\sqrt{2}-\sqrt{3}|$
 \end{enumerate}
+
+
 
 \section*{Άσκηση 6  \hfill \small{}}
-Να λύσετε τις παρακάτω εξισώσεις:
+Να υπολογίσετε τις παρακάτω ρίζες:
 \begin{enumerate}[1)]
-  \item $ (x-2)^{2}+2 =(x+1)^{2}+1$
-  \item $ (2x-1)^{2}+1=4x(x+2)-6 $
-  \item $ (2x+3)^{2}-4x=4(x+2)^{2}+1 $
-  \item $ x^{2}-5x+1=(x-1)^{2} $
-  \item $ (x^{2}+1)^{2}=x(x^{3}+1)+2x^{2} $        
+ \item $\sqrt{49}$
+ \item $\sqrt[3]{8}$
+ \item $\sqrt[4]{16}$
+ \item $\sqrt[5]{32}$
+ \item $\dfrac{\sqrt{125}}{\sqrt{5}}$
 \end{enumerate}
 
+
 \section*{Άσκηση 7  \hfill \small{}}
-Να λύσετε τις παρακάτω εξισώσεις για τις διάφορες τιμές της παραμέτρου $λ\in \Re$:
+Να μετατρέψετε τις παρακάτω παραστάσεις σε ισοδύναμες με ρητούς παρονομαστές:
 \begin{enumerate}[1)]
-\item $λx=3λ$
-\item $(λ-2)x=λ-2$
-\item $(λ-1)x=λ-3$
-\item $λ(λ-3)x=λ-3$
-\item $λx-3=λ-3x$
+ \item $\dfrac{1}{\sqrt{2}}$
+ \item $\dfrac{5}{\sqrt{5}}$
+ \item $\dfrac{6}{\sqrt{3}}$
+ \item $\dfrac{1}{2-\sqrt{2}}$
+ \item $\dfrac{2}{\sqrt{2}-\sqrt{3}}$
 \end{enumerate}
+
+
+\section*{Άσκηση 8  \hfill \small{}}
+Να λύσετε τις παρακάτω εξισώσεις:
+\begin{enumerate}[1)]
+ \item $5x-10=0$
+ \item $4x-2=x+7$
+ \item $6x-4=10x+8$
+ \item $\dfrac{1-2x}{2}+3=\dfrac{x-1}{3}$
+ \item $3(2x-1)-2(3x+1)=-4(x-1)$
+ \item $6(x+2)-3(2x+1)=-4(x-1)$
+ \item $\dfrac{1}{x-1}-2=\dfrac{3}{x-1}$
+ \item $|2x-3|=3x-3$
+\end{enumerate}
+
+
+\section*{Άσκηση 9  \hfill \small{}}
+Να λύσετε τις παρακάτω εξισώσεις για τις διάφορες τιμές της παραμέτρου $λ\in \mathbb{R}$:
+\begin{enumerate}[1)]
+ \item $(λ-1)x-λ+1=0$
+ \item $λ(λ-1)x-λ+1=0$
+ \item $(λ+1)x-λ-1=0$
+ \item $(λ-2)x-λ=0$
+\end{enumerate}
+
+
+\section*{Άσκηση 10  \hfill \small{}}
+Να λύσετε τις παρακάτω εξισώσεις:
+\begin{enumerate}[1)]
+ \item $x^{3}-8=0$
+ \item $x^{3}+8=0$
+ \item $x^{2}-49=0$
+ \item $x^{2}+81=0$
+ \item $x^{11}+1=0$
+ \item $x^{4}-16=0$
+\end{enumerate}
+
+\section*{Άσκηση 11  \hfill \small{}}
+Να λύσετε τις παρακάτω εξισώσεις:
+\begin{enumerate}[1)]
+ \item $x^{2}-5x+4=0$
+ \item $x^{2}-6x+0=0$
+ \item $2x^{2}-x+3=0$
+ \item $6x^{2}-3x=0$
+ \item $4x^{2}-2=0$
+ \item $x^{2}-2x+1=0$
+\end{enumerate}
+
 
 \end{document}
