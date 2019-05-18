@@ -1,0 +1,395 @@
+
+\documentclass[a4paper,10pt]{report}
+
+%\usepackage[landscape]{geometry}
+\usepackage[cm-default]{fontspec}
+\setromanfont{FreeSerif}
+\setsansfont{FreeSans}
+\setmonofont{FreeMono}
+\usepackage[utf8x]{inputenc}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{xgreek}
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\usepackage{ulem}
+\usepackage{color}
+\usepackage{verbatim}
+\usepackage{nopageno}
+\usepackage{graphicx}
+\usepackage{textpos}
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
+%\usepackage[colorgrid,texcoord]{eso-pic}
+\usepackage[outline]{contour}
+\usepackage{wrapfig}
+\usepackage{url}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{fancybox,fancyhdr}
+\usepackage{subfigure}
+\usepackage{pstricks}
+\usepackage{epsfig}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\hypersetup{
+  bookmarks=true,
+  bookmarksopen=true,
+  pdfborder=false,
+  pdfpagemode=UseNone,
+  raiselinks=true,
+  pdfhighlight={/P},
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=black
+}
+
+
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+
+
+% Margins
+%\setlength{\textwidth}{24cm}
+
+%\setlength{\voffset}{0in}
+%\setlength{\textheight}{6.8in}
+% Colors
+\definecolor{cbrown}{rgb}{0.49,0.24,0.07}
+\definecolor{cmpez}{rgb}{0.92,0.88,0.79}
+\definecolor{cmpez2}{rgb}{0.62,0.33,0.34}
+\definecolor{cwhite}{rgb}{1,1,1}
+\definecolor{cblack}{rgb}{0,0,0}
+\definecolor{cred}{rgb}{0.9,0.15,0.15}
+\definecolor{clblue}{rgb}{0.57,0.85,0.97}
+\definecolor{corange}{rgb}{0.86,0.49,0.18}
+\definecolor{clorange}{rgb}{0.95,0.84,0.61}
+\definecolor{cyellow}{rgb}{1,0.95,0.16}
+\definecolor{cgreen}{rgb}{0.69,0.8,0.31}
+\definecolor{clbrown}{rgb}{0.78,0.67,0.43}
+\definecolor{cmagenta}{rgb}{0.79,0.05,0.54}
+\definecolor{cgray}{rgb}{0.76,0.73,0.63}
+\definecolor{bluesite}{rgb}{0.05,0.43,0.67}
+\definecolor{redsite}{rgb}{0.90,0.15,0.15}
+\definecolor{backsite}{rgb}{0.07,0.07,0.07}
+% ----------- from Costas -----------------------------
+
+%---------------   Main Fonts    -----------------%   
+
+% \setmainfont[Mapping=tex-text]{Calibri}
+% \setmainfont[Mapping=tex-text]{Times New Roman}
+%\setmainfont[Mapping=tex-text]{Droid Serif}
+%\setmainfont[Mapping=tex-text]{Cambria}
+%\setmainfont[Mapping=tex-text]{cm-unicode}
+% \setmainfont[Mapping=tex-text]{Gentium}
+% \setmainfont[Mapping=tex-text]{GFS Didot}
+% \setmainfont[Mapping=tex-text]{Comic Sans MS}
+ \setmainfont[Mapping=tex-text]{Ubuntu}
+% \setmainfont[Mapping=tex-text]{Myriad Pro}
+% \setmainfont[Mapping=tex-text]{CMU Concrete}
+%\setmainfont[Mapping=tex-text]{DejaVu Sans}
+%\setmainfont[Mapping=tex-text]{KerkisSans}
+%\setmainfont[Mapping=tex-text]{KerkisCaligraphic}
+% \setmainfont[Mapping=tex-text]{Segoe Print}
+% \setmainfont[Mapping=tex-text]{Gabriola}
+
+%------------------------------------------------%
+
+% ------------ Mathematics Fonts ----------------%
+%\setmathfont{Asana-Math.ttf}
+% -----------------------------------------------%
+% Misc
+\author{Κασωτάκη Ε. - Σμαραγδάκης Κ.}
+\title{www.math24.gr}
+% ---------------- Formation --------------------%
+
+
+\setlength\topmargin{-0.7cm}
+\addtolength\topmargin{-\headheight}
+\addtolength\topmargin{-\headsep}
+\setlength\textheight{26cm}
+\setlength\oddsidemargin{-0.54cm}
+\setlength\evensidemargin{-0.54cm}
+%\setlength\marginparwidth{1.5in}
+\setlength\textwidth{17cm}
+
+\RequirePackage[avantgarde]{quotchap}
+\renewcommand\chapterheadstartvskip{\vspace*{0\baselineskip}}
+\RequirePackage[calcwidth]{titlesec}
+\titleformat{\section}[hang]{\bfseries}
+{\Large\thesection}{12pt}{\Large}[{\titlerule[0.9pt]}]
+%--------------------------------------------------%
+%\usepackage{draftwatermark}
+%\SetWatermarkText{www.math24.gr}
+%\SetWatermarkLightness{0.9}
+%\SetWatermarkScale{0.6}
+%--------------------------------------------------%
+
+
+\usepackage{xcolor}
+\usepackage{amsthm}
+\usepackage{framed}
+\usepackage{parskip}
+
+\colorlet{shadecolor}{bluesite!20}
+
+\newtheorem*{orismos}{Ορισμός}
+
+\newenvironment{notation}
+  {\begin{shaded}\begin{theorem}}
+  {\end{theorem}\end{shaded}}
+
+
+
+
+% Document begins
+\begin{document}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\fancyhead[LO,LE]{
+ %\textblockcolor{backsite}
+ %\begin{textblock}{5}(-2,-0.55)
+  %\rule{0cm}{1cm}
+ %\end{textblock}
+ \textblockcolor{bluesite}
+ \begin{textblock}{5}(-1.5,-0.55)
+  \rule{0cm}{1cm}
+ \end{textblock}
+ %\textblockcolor{bluesite}
+ %\begin{textblock}{14}(5.5,-0.55)
+ % \rule{0cm}{1cm}
+ %\end{textblock}
+ \begin{textblock}{0}(-1,-0.25)
+ \color{cwhite} \begin{Large}www.math24.gr\end{Large}
+ \end{textblock}
+\begin{textblock}{0}(16,-0.4)
+ \color{cwhite} \includegraphics[height=1.5cm]{math24_logo.png}
+ \end{textblock}
+\textblockcolor{white}
+\begin{textblock}{17}(-1,28)
+ \color{backsite} \begin{small}Επιμέλεια: Κασωτάκη Ειρήνη (ikasotaki@gmail.com) - Σχολικό έτος 2018 -  2019  \end{small}
+ \end{textblock}
+}
+ \begin{shaded}
+\begin{center}
+\huge \textbf{Άλγεβρα Α' Λυκείου}\\
+\end{center} 
+\begin{center}
+\textbf{Επαναληπτικές Ασκήσεις στην ´Εννοια της Συνάρτησης } \hfill \textbf{}
+\end{center}
+%\subsection*{}
+\end{shaded}
+%\vspace{2em
+%\begin{shaded}
+%\begin{center}
+%\huge \textbf{Επαναληπτικές Ασκήσεις για το Κεφάλαιο 1}\\
+%Πρόσθεση ρητών αριθμών
+%\end{center} 
+%\textbf{Μαθηματικά Α' Γυμνασίου} \hfill \textbf{Ημερομηνία Παράδοσης : \hspace{2em} }
+%\subsection*{Ονοματεπώνυμο :\hfill  \hspace{5em}}
+%\end{shaded}
+\vspace{2em}
+\begin{itemize}
+\item Πεδίο ορισμού συναρτήσεων
+%Εξισώσεις α' βαθμού με απόλυτες τιμές
+%Κλασματικές εξισώσεις που ανάγονται σε α' βαθμού
+%Εξισώσεις με ταυτότητες που ανάγονται σε α' βαθμού
+\end{itemize}
+
+\section*{Άσκηση 1  \hfill \small{}}
+Να βρείτε το πεδίο ορισμού των παρακάτω συναρτήσεων:
+\begin{enumerate}[1)]
+ \item $f(x)=\dfrac{3}{x+4}$
+ \item $f(x)=\dfrac{4}{x+7}$
+ \item $f(x)=\dfrac{4}{x-5}+1$
+ \item $f(x)=\dfrac{3}{x-8}$
+ \item $f(x)=\dfrac{3x}{2x+5}+5$
+ \item $f(x)=\dfrac{2x+1}{3x+8}$   
+ \item $f(x)=\dfrac{x+2}{x-5}+\dfrac{3x}{2x+4}$
+ \item $f(x)=\dfrac{5x}{x+4}-\dfrac{2}{3x-12}$ 
+ \item $f(x)=\dfrac{3x}{4}+1$
+ \item $f(x)=\dfrac{x^{2}-3x}{2}$  
+\end{enumerate}
+
+
+\section*{Άσκηση 2  \hfill \small{}}
+Να βρείτε το πεδίο ορισμού των παρακάτω συναρτήσεων:
+\begin{enumerate}[1)]
+ \item $f(x)=\dfrac{x^{2}-25}{x^{2}-5x}$
+ \item $f(x)=\dfrac{x^{2}-9}{x^{2}-3x}$
+ \item $f(x)=\dfrac{3}{x^{2}+4x+4}$
+ \item $f(x)=\dfrac{x^{2}}{x^{2}-6x+9}$
+ \item $f(x)=\dfrac{x}{x^{2}-5x+6}$
+ \item $f(x)=\dfrac{3x+1}{x^{2}-3x-4}$
+ \item $f(x)=\dfrac{3x}{x^{2}+2}$
+ \item $f(x)=\dfrac{4x+1}{x^{2}+3}$
+ \item $f(x)=\dfrac{2x}{x^{2}-x+5}$
+ \item $f(x)=\dfrac{x^{2}+1}{x^{2}+2+4}$
+\end{enumerate}
+
+\section*{Άσκηση 3  \hfill \small{}}
+Να βρείτε το πεδίο ορισμού των παρακάτω συναρτήσεων:
+\begin{enumerate}[1)]
+ \item $f(x)=\sqrt{x-5}$
+ \item $f(x)=\sqrt{x-7}$
+ \item $f(x)=\sqrt{x-2}+\sqrt{x-5}$
+ \item $f(x)=\sqrt{x}+\sqrt{x+3}$
+ \item $f(x)=\sqrt{2x-8}$
+ \item $f(x)=\sqrt{3x-10}$
+ \item $f(x)=\sqrt{2x-4}-\sqrt{3x-9}$
+ \item $f(x)=\sqrt{3x+6}+\sqrt{4x+20}$
+\end{enumerate}
+
+
+\section*{Άσκηση 4  \hfill \small{}}
+Να βρείτε το πεδίο ορισμού των παρακάτω συναρτήσεων:
+\begin{enumerate}[1)]
+ \item $f(x)=\sqrt{x^{2}-16}$
+ \item $f(x)=\sqrt{x^{2}-25}$ 
+ \item $f(x)=\sqrt{x^{2}-4x+4}$ 
+ \item $f(x)=\sqrt{x^{2}+10+25}$
+ \item $f(x)=\sqrt{x^{2}+3x-4}$
+ \item $f(x)=\sqrt{x^{2}-x-6}$
+ \item $f(x)=\sqrt{x^{2}-x+6}$
+ \item $f(x)=\sqrt{x^{2}+2x+5}$
+\end{enumerate}
+
+
+
+\section*{Άσκηση 5  \hfill \small{}}
+Να βρείτε το πεδίο ορισμού των παρακάτω συναρτήσεων:
+\begin{enumerate}[1)]
+ \item $f(x)=\dfrac{1}{x-1}+\sqrt{x-3}$
+ \item $f(x)=\dfrac{1}{x-2}+\sqrt{x-2}$
+ \item $f(x)=\dfrac{3}{x-4}$
+ \item $f(x)=\dfrac{2}{\sqrt{x}-4}$
+ \item $f(x)=\dfrac{1}{x^{2}-4}+\sqrt{x^{2}-4x+4}$
+\end{enumerate}
+
+\section*{Άσκηση 6  \hfill \small{}}
+Να βρείτε το πεδίο ορισμού των παρακάτω συναρτήσεων:
+\begin{enumerate}[1)]
+\item  $$ f(x)=\begin{cases} 
+                \ x^{2}   &, αν\quad x< 1 \\
+                  x+4     &, αν\quad x\ge 1
+               \end{cases} $$
+\item  $$ f(x)=\begin{cases} 
+                \ 3x+1   , & αν\quad x\le 0 \\
+                  x^{2}+2    , & αν\quad 0<x<5
+               \end{cases} $$ 
+\item  $$ f(x)=\begin{cases} 
+                \ 2x+1       , & αν\quad <1x<2 \\
+                  2x-1       , & αν\quad 2\le x<10
+               \end{cases} $$                
+\item  $$ f(x)=\begin{cases} 
+                \ x^{3}      , & αν\quad \le x<3 \\
+                  x^{2}+1    , & αν\quad 3<x<10
+               \end{cases} $$  
+\item  $$ f(x)=\begin{cases} 
+                \ 3x+1      , & αν\quad x\le 0 \\
+                  2x^{2}    , & αν\quad 0<x<5
+               \end{cases} $$                              
+\end{enumerate} 
+
+\section*{Άσκηση 7  \hfill \small{}}
+Δίνεται η συνάρτηση $f(x)=x^{3}-1$. Να υπολογίσετε τις τιμές $f(-1)$,$f(0)$ και $f(2)$.
+
+\section*{Άσκηση 8  \hfill \small{}}
+Δίνεται η συνάρτηση $f(x)=2x^{2}-4x+5$. Να υπολογίσετε τις τιμές $f(-3)$,$f(1)$ και $f(5)$.
+
+\section*{Άσκηση 9  \hfill \small{}}
+Δίνεται η συνάρτηση 
+$$ f(x)=\begin{cases} 
+                \ 2x^{2}-1   & αν\quad x< 0 \\
+                  2x+1     & αν\quad x\ge 0
+               \end{cases} $$
+Να υπολογίσετε τις τιμές $f(-5)$,$f(0)$ και $f(3)$.
+
+\section*{Άσκηση 10  \hfill \small{}}
+Δίνεται η συνάρτηση 
+$$ f(x)=\begin{cases} 
+                \ 3x-5   & αν\quad x\le 1 \\
+                  2x^{3}+1     & αν\quad 1<x\le 5
+               \end{cases} $$
+Να υπολογίσετε τις τιμές $f(-5)$,$f(1)$ και $f(2)$.
+
+\section*{Άσκηση 11  \hfill \small{}}
+Δίνεται η συνάρτηση 
+$$ f(x)=\dfrac{x^{2}-4}{x-2} $$
+\begin{enumerate}[1)]
+\item Να βρούμε το πεδίο ορισμού της $f$.
+\item Να υπολογίσουμε τις τιμές $f(-2)$, $f(0)$ και $f(1)$.
+\end{enumerate}
+
+\section*{Άσκηση 12  \hfill \small{}}
+Δίνεται η συνάρτηση 
+$$ f(x)=\begin{cases} 
+                \ x^{2}+5x+1   & αν\quad x< 2 \\
+                  \sqrt{x-2}     & αν\quad x\ge 2
+               \end{cases} $$
+\begin{enumerate}[1)]
+\item Να βρείτε το πεδίο ορισμού της $f$.
+\item Να υπολογίσετε τις τιμές $f(0)$, $f(2)$ και $f(6)$.
+\end{enumerate}
+
+\section*{Άσκηση 13  \hfill \small{}}
+Δίνεται η συνάρτηση 
+$$ f(x)=\dfrac{1}{x^{2}+1}+5 $$
+Να βρείτε τις τιμές του $x$ για  τις οποίες ισχύει $f(x)=6$.
+
+\section*{Άσκηση 14  \hfill \small{}}
+Δίνεται η συνάρτηση 
+$$ f(x)=\begin{cases} 
+                \ 2x^{3}+1   & αν\quad x\le 1 \\
+                  \ x^{2}-5x+4     & αν\quad x>1
+               \end{cases} $$
+Να βρείτε τις τιμές του $x$ για  τις οποίες ισχύει $f(x)=0$.
+
+
+\section*{Άσκηση 15  \hfill \small{}}
+Δίνεται η συνάρτηση 
+$$ f(x)=\dfrac{x^{2}-8x+6}{2x^{2}-10x+8} $$
+\begin{enumerate}[1)]
+\item Να βρείτε το πεδίο ορισμού της $f$.
+\item Να υπολογίσετε τις τιμές $f(-1)$, $f(0)$ και $f(3)$.
+\item Να λύσετε την εξίσωση $f(x)=0$.
+\end{enumerate}
+
+
+\section*{Άσκηση 16  \hfill \small{}}
+Δίνεται η συνάρτηση 
+$$ f(x)=\begin{cases} 
+                \ x^{2}-5x+4   & αν\quad x<0 \\
+                  \ x^{2}-8x+16     & αν\quad x\ge0
+               \end{cases} $$
+\begin{enumerate}[1)]
+\item Να βρείτε το πεδίο ορισμού της $f$.
+\item Να υπολογίσετε τις τιμές $f(-1)$, $f(0)$ και $f(2)$.
+\item Να λύσετε την εξίσωση $f(x)=0$.
+\end{enumerate}
+
+
+\section*{Άσκηση 17  \hfill \small{}}
+Δίνεται η συνάρτηση 
+$$ f(x)=\begin{cases} 
+                \ x^{2}+3x-4   & αν\quad x<1 \\
+                  \ 2x^{2}-3x-2     & αν\quad x\ge 1
+               \end{cases} $$
+\begin{enumerate}[1)]
+\item Να βρείτε το πεδίο ορισμού της $f$.
+\item Να υπολογίσετε τις τιμές $f(-2)$, $f(1)$ και $f(2)$.
+\item Να λύσετε την εξίσωση $f(x)=0$.
+\end{enumerate}
+
+\end{document}
