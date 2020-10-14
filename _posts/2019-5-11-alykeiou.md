@@ -14,5 +14,6 @@ description: Άλγεβρα
 [**Επαναληπτικές Ασκήσεις Στο 6.1**]({{ site.url | absolute_path}}/assets/LAA/Askiseis/Askiseis_6.1/Askiseis_6.1.pdf)  "Επαναληπτικές Ασκήσεις στην έννοια της συνάρτησης"
 
 ## Τεστ
-[**Τεστ Ασκήσεις Στο Ε2**]({{ site.url | absolute_path}}/assets/LAA/Tests/test_E2/test_E2.pdf)  "Τεστ στα σύνολα"
-[**Τεστ Ασκήσεις Στο 2.1**]({{ site.url | absolute_path}}/assets/LAA/Tests/test_2.1_1/test_2.1_1.pdf)  "Ταυτότητες"
+[**Τεστ Ασκήσεις Στο Ε2**]({{ site.url | absolute_path}}/assets/LAA/Tests/test_E2/test_E2.pdf)  "Τεστ στα σύνολα"  
+[**Τεστ Ασκήσεις Στο 2.1**]({{ site.url | absolute_path}}/assets/LAA/Tests/test_2.1_1/test_2.1_1.pdf)  "Ταυτότητες"  
+[**Τεστ Ασκήσεις Στο 2.2**]({{ site.url | absolute_path}}/assets/LAA/Tests/test_2.1_2/test_2.2_1.pdf)  "Ιδιότητες Ανισοτήτων"
