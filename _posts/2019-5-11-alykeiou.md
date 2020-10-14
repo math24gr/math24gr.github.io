@@ -12,3 +12,6 @@ description: Άλγεβρα
 [**Επαναληπτικές Ασκήσεις Στο 3.3**]({{ site.url | absolute_path}}/assets/LAA/Askiseis/Askiseis_3.3/Askiseis_3.3.pdf)  "Επαναληπτικές Ασκήσεις στις εξισώσεις β' βαθμού"  
 [**Επαναληπτικές Ασκήσεις Στο 4.1**]({{ site.url | absolute_path}}/assets/LAA/Askiseis/Askiseis_4.1/Askiseis_4.1.pdf)  "Επαναληπτικές Ασκήσεις στις ανισώσεις α' βαθμού"  
 [**Επαναληπτικές Ασκήσεις Στο 6.1**]({{ site.url | absolute_path}}/assets/LAA/Askiseis/Askiseis_6.1/Askiseis_6.1.pdf)  "Επαναληπτικές Ασκήσεις στην έννοια της συνάρτησης"
+
+## Τεστ
+[**Τεστ Ασκήσεις Στο Ε2**]({{ site.url | absolute_path}}/assets/LAA/Tests/Test_E2/Test_E2.pdf)  "Τεστ στα σύνολα" 
