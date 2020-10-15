@@ -17,7 +17,8 @@ description: Άλγεβρα
 [**Τεστ Στο Ε2**]({{ site.url | absolute_path}}/assets/LAA/Tests/test_E2/test_E2.pdf)  "Τεστ στα σύνολα"  
 [**Τεστ Στο 2.1**]({{ site.url | absolute_path}}/assets/LAA/Tests/test_2.1_1/test_2.1_1.pdf)  "Ταυτότητες"  
 [**Τεστ Στο 2.2**]({{ site.url | absolute_path}}/assets/LAA/Tests/test_2.2_1/test_2.2_1.pdf)  "Ιδιότητες Ανισοτήτων"  
-[**Τεστ Στο 2.2**]({{ site.url | absolute_path}}/assets/LAA/Tests/test_2.2_2/test_2.2_2.pdf)  "Άθροισμα τετραγώνων ισούται με μηδέν"
+[**Τεστ Στο 2.2**]({{ site.url | absolute_path}}/assets/LAA/Tests/test_2.2_2/test_2.2_2.pdf)  "Άθροισμα τετραγώνων ισούται με μηδέν"  
+[**Τεστ Στο 2.3**]({{ site.url | absolute_path}}/assets/LAA/Tests/test_2.3_1/test_2.3_1.pdf)  "Απαλοιφή απολύτων τιμών"
 
 ## Διαδικτυακά Τεστ
 [**Τεστ Στο 6.1**]( {{ https://docs.google.com/forms/d/e/1FAIpQLSfuXyaCdqh4Bzoa2SbHKmWh2Z2r4oUWQVpLcIAeB6OQ1OnrlA/viewform?usp=sf_link }} )  "Πεδίο Ορισμού Συνάρτησης"  
