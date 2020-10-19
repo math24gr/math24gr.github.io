@@ -24,8 +24,11 @@ description: Άλγεβρα
 [**Τεστ Στο 3.1**]({{ site.url | absolute_path}}/assets/LAA/Tests/test_3.1_1/test_3.1_1.pdf)  "Εξισώσεις α' βαθμού"  
 [**Τεστ Στο 3.1**]({{ site.url | absolute_path}}/assets/LAA/Tests/test_3.1_2/test_3.1_2.pdf)  "Εξισώσεις που ανάγοντται σε α' βαθμού (κλασματικές και με απόλυτα)"  
 [**Τεστ Στο 3.1**]({{ site.url | absolute_path}}/assets/LAA/Tests/test_3.1_3/test_3.1_3.pdf)  "Εξισώσεις που ανάγοντται σε α' βαθμού (με παραγοντοποίησης)"  
+[**Τεστ Στο 4.2**]({{ site.url | absolute_path}}/assets/LAA/Tests/test_4.2_1/test_4.2_1.pdf)  "Πρόσημο τριωνύμου"  
+[**Τεστ Στο 4.2**]({{ site.url | absolute_path}}/assets/LAA/Tests/test_4.2_2/test_4.2_2.pdf)  "Μετατροπή τριωνύμου σε γινόμενο"  
+[**Τεστ Στο 4.2**]({{ site.url | absolute_path}}/assets/LAA/Tests/test_4.2_3/test_4.2_3.pdf)  "Ανισώσεις β' βαθμού"  
 
 ## Διαδικτυακά Τεστ
-[**Τεστ Στο 6.1**]( {{ site.url | absolute_path}} https://docs.google.com/forms/d/e/1FAIpQLSfuXyaCdqh4Bzoa2SbHKmWh2Z2r4oUWQVpLcIAeB6OQ1OnrlA/viewform?usp=sf_link  )  "Πεδίο Ορισμού Συνάρτησης"  
-S
-[**Τεστ Στο 6.1**]( {{ site.url | https://docs.google.com/forms/d/e/1FAIpQLSfuXyaCdqh4Bzoa2SbHKmWh2Z2r4oUWQVpLcIAeB6OQ1OnrlA/viewform?usp=sf_link }} )  "Πεδίο Ορισμού Συνάρτησης"  
+[**Τεστ Στο 6.1**]({{ site.url | absolute_path}} https://docs.google.com/forms/d/e/1FAIpQLSfuXyaCdqh4Bzoa2SbHKmWh2Z2r4oUWQVpLcIAeB6OQ1OnrlA/viewform?usp=sf_link  )  "Πεδίο Ορισμού Συνάρτησης"  
+
+[**Τεστ Στο 6.1**]({{ site.url | https://docs.google.com/forms/d/e/1FAIpQLSfuXyaCdqh4Bzoa2SbHKmWh2Z2r4oUWQVpLcIAeB6OQ1OnrlA/viewform?usp=sf_link }} )  "Πεδίο Ορισμού Συνάρτησης"  
