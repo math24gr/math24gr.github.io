@@ -31,4 +31,3 @@ description: Άλγεβρα
 ## Διαδικτυακά Τεστ
 [**Τεστ Στο 6.1**]({{ site.url | absolute_path}} https://docs.google.com/forms/d/e/1FAIpQLSfuXyaCdqh4Bzoa2SbHKmWh2Z2r4oUWQVpLcIAeB6OQ1OnrlA/viewform?usp=sf_link  )  "Πεδίο Ορισμού Συνάρτησης"  
 
-[**Τεστ Στο 6.1**]({{ site.url | https://docs.google.com/forms/d/e/1FAIpQLSfuXyaCdqh4Bzoa2SbHKmWh2Z2r4oUWQVpLcIAeB6OQ1OnrlA/viewform?usp=sf_link }} )  "Πεδίο Ορισμού Συνάρτησης"  
