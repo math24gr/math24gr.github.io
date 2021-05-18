@@ -1,0 +1,321 @@
+
+\documentclass[a4paper,10pt]{report}
+
+%\usepackage[landscape]{geometry}
+\usepackage[cm-default]{fontspec}
+\setromanfont{FreeSerif}
+\setsansfont{FreeSans}
+\setmonofont{FreeMono}
+\usepackage[utf8x]{inputenc}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{xgreek}
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\usepackage{ulem}
+\usepackage{color}
+\usepackage{verbatim}
+\usepackage{nopageno}
+\usepackage{graphicx}
+\usepackage{textpos}
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
+%\usepackage[colorgrid,texcoord]{eso-pic}
+\usepackage[outline]{contour}
+\usepackage{wrapfig}
+\usepackage{url}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{fancybox,fancyhdr}
+\usepackage{subfigure}
+\usepackage{pstricks}
+\usepackage{epsfig}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\hypersetup{
+  bookmarks=true,
+  bookmarksopen=true,
+  pdfborder=false,
+  pdfpagemode=UseNone,
+  raiselinks=true,
+  pdfhighlight={/P},
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=black
+}
+
+
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+
+
+% Margins
+%\setlength{\textwidth}{24cm}
+
+%\setlength{\voffset}{0in}
+%\setlength{\textheight}{6.8in}
+% Colors
+\definecolor{cbrown}{rgb}{0.49,0.24,0.07}
+\definecolor{cmpez}{rgb}{0.92,0.88,0.79}
+\definecolor{cmpez2}{rgb}{0.62,0.33,0.34}
+\definecolor{cwhite}{rgb}{1,1,1}
+\definecolor{cblack}{rgb}{0,0,0}
+\definecolor{cred}{rgb}{0.9,0.15,0.15}
+\definecolor{clblue}{rgb}{0.57,0.85,0.97}
+\definecolor{corange}{rgb}{0.86,0.49,0.18}
+\definecolor{clorange}{rgb}{0.95,0.84,0.61}
+\definecolor{cyellow}{rgb}{1,0.95,0.16}
+\definecolor{cgreen}{rgb}{0.69,0.8,0.31}
+\definecolor{clbrown}{rgb}{0.78,0.67,0.43}
+\definecolor{cmagenta}{rgb}{0.79,0.05,0.54}
+\definecolor{cgray}{rgb}{0.76,0.73,0.63}
+\definecolor{bluesite}{rgb}{0.05,0.43,0.67}
+\definecolor{redsite}{rgb}{0.90,0.15,0.15}
+\definecolor{backsite}{rgb}{0.07,0.07,0.07}
+% ----------- from Costas -----------------------------
+
+%---------------   Main Fonts    -----------------%   
+
+% \setmainfont[Mapping=tex-text]{Calibri}
+% \setmainfont[Mapping=tex-text]{Times New Roman}
+%\setmainfont[Mapping=tex-text]{Droid Serif}
+%\setmainfont[Mapping=tex-text]{Cambria}
+%\setmainfont[Mapping=tex-text]{cm-unicode}
+% \setmainfont[Mapping=tex-text]{Gentium}
+% \setmainfont[Mapping=tex-text]{GFS Didot}
+% \setmainfont[Mapping=tex-text]{Comic Sans MS}
+ \setmainfont[Mapping=tex-text]{Ubuntu}
+% \setmainfont[Mapping=tex-text]{Myriad Pro}
+% \setmainfont[Mapping=tex-text]{CMU Concrete}
+%\setmainfont[Mapping=tex-text]{DejaVu Sans}
+%\setmainfont[Mapping=tex-text]{KerkisSans}
+%\setmainfont[Mapping=tex-text]{KerkisCaligraphic}
+% \setmainfont[Mapping=tex-text]{Segoe Print}
+% \setmainfont[Mapping=tex-text]{Gabriola}
+
+%------------------------------------------------%
+
+% ------------ Mathematics Fonts ----------------%
+\setmathfont{Asana-Math.ttf}
+% -----------------------------------------------%
+% Misc
+\author{Κασωτάκη Ε. - Σμαραγδάκης Κ.}
+\title{www.math24.gr}
+% ---------------- Formation --------------------%
+
+
+\setlength\topmargin{-0.7cm}
+\addtolength\topmargin{-\headheight}
+\addtolength\topmargin{-\headsep}
+\setlength\textheight{26cm}
+\setlength\oddsidemargin{-0.54cm}
+\setlength\evensidemargin{-0.54cm}
+%\setlength\marginparwidth{1.5in}
+\setlength\textwidth{17cm}
+
+\RequirePackage[avantgarde]{quotchap}
+\renewcommand\chapterheadstartvskip{\vspace*{0\baselineskip}}
+\RequirePackage[calcwidth]{titlesec}
+\titleformat{\section}[hang]{\bfseries}
+{\Large\thesection}{12pt}{\Large}[{\titlerule[0.9pt]}]
+%--------------------------------------------------%
+\usepackage{draftwatermark}
+\SetWatermarkText{www.math24.gr}
+\SetWatermarkLightness{0.9}
+\SetWatermarkScale{0.6}
+%--------------------------------------------------%
+
+
+\usepackage{xcolor}
+\usepackage{amsthm}
+\usepackage{framed}
+\usepackage{parskip}
+
+\colorlet{shadecolor}{bluesite!20}
+
+\newtheorem*{orismos}{Ορισμός}
+
+\newenvironment{notation}
+  {\begin{shaded}\begin{theorem}}
+  {\end{theorem}\end{shaded}}
+
+
+
+
+% Document begins
+\begin{document}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\fancyhead[LO,LE]{
+ %\textblockcolor{backsite}
+ %\begin{textblock}{5}(-2,-0.55)
+  %\rule{0cm}{1cm}
+ %\end{textblock}
+ \textblockcolor{bluesite}
+ \begin{textblock}{5}(-1.5,-0.55)
+  \rule{0cm}{1cm}
+ \end{textblock}
+ %\textblockcolor{bluesite}
+ %\begin{textblock}{14}(5.5,-0.55)
+ % \rule{0cm}{1cm}
+ %\end{textblock}
+ \begin{textblock}{0}(-1,-0.25)
+ \color{cwhite} \begin{Large}www.math24.gr\end{Large}
+ \end{textblock}
+\begin{textblock}{0}(16,-0.4)
+ \color{cwhite} \includegraphics[height=1.5cm]{math24_logo.png}
+ \end{textblock}
+\textblockcolor{white}
+\begin{textblock}{17}(-1,28)
+ \color{backsite} \begin{small}Copyright \textcopyright 2011, Κασωτάκη Ε.(ikasotaki@gmail.com) - Σμαραγδάκης Κ.(kesmarag@gmail.com)\end{small}
+ \end{textblock}
+}
+ 
+\begin{shaded}
+\begin{center}
+\huge \textbf{Φυλλάδιο Ασκήσεων}\\
+%Πρόσθεση ρητών αριθμών
+\end{center} 
+\textbf{Μαθηματικά Α' Γυμνασίου} \hfill \textbf{Ημερομηνία Παράδοσης : \hspace{2em} }
+\subsection*{Ονοματεπώνυμο :\hfill  \hspace{5em}}
+\end{shaded}
+\vspace{2em}
+\begin{itemize}
+ \item Απαλοιφή παρενθέσεων
+ \item Μεταβολή ενός μεγέθους
+ \item Αφαίρεση αριθμών
+\end{itemize}
+%-------------------------------------------------------------------------
+\section*{Θεωρία - Απαλοιφή παρενθέσεων\hfill \small{}}
+\begin{itemize}
+ \item Όταν μία παρένθεση έχει μπροστά της το πρόσημο "\textbf{+}" (ή δεν έχει πρόσημο), μπορούμε να την 
+       απαλείψουμε μαζί με το "+" (αν έχει) και να γράψουμε τους όρους που περιέχει με τα πρόσημά τους.\\
+       \textbf{π.χ} $+(5+7-3-2+1)=5+7-3-2+1$ \\
+       \textbf{π.χ} $(7-10-4-11+13)=7-10-4-11+13$ \\
+ \item Όταν μία παρένθεση έχει μπροστά της το πρόσημο "\textbf{-}" , μπορούμε να την 
+       απαλείψουμε μαζί με το "-" και να γράψουμε τους όρους που περιέχει με αντίθετα πρόσημά τους.\\
+       \textbf{π.χ} $-(5+7-3-2+1)=-5-7+3+2-1$ \\
+       \textbf{π.χ} $-(7-10-4-11+13)=-7+10+4+11-13$ \\      
+\end{itemize}
+
+
+\section*{Άσκηση 1  \hfill \small{30 μονάδες}}
+Να επιλέξετε τη σωστή απάντηση:
+\begin{enumerate}[1)]
+ \item $+(3+5-2-1)$    %to 1o
+\begin{multicols}{4}
+\begin{enumerate}[i)]
+ \item $3+5-2-1$
+ \item $3-5+2+1$
+ \item $-3-5+2+1$
+ \item $-3+5+2+1$
+\end{enumerate}
+\end{multicols}
+ \item $-(17-13+15)$    %to 2o
+\begin{multicols}{4}
+\begin{enumerate}[i)]
+ \item $-17-13-15$
+ \item $-17+13-15$
+ \item $-17-13+15$
+ \item $17-13+15$
+\end{enumerate}
+\end{multicols}
+ \item $-(5+2)+(4+1)$    %to 3o
+\begin{multicols}{4}
+\begin{enumerate}[i)]
+ \item $-5-2-4-1$
+ \item $-5-2-4+1$
+ \item $5+2+4+1$
+ \item $-5-2+4+1$
+\end{enumerate}
+\end{multicols}
+ \item $(5+1)-(17-13)$    %to 4o
+\begin{multicols}{4}
+\begin{enumerate}[i)]
+ \item $5+1+17+13$
+ \item $-5-1-17-13$
+ \item $5+1-17+13$
+ \item $5+1-17-13$
+\end{enumerate}
+\end{multicols}
+ \item $-(5+1)-(-7-3)$    %to 5o
+\begin{multicols}{4}
+\begin{enumerate}[i)]
+ \item $-5-1+7+3$
+ \item $-5-1-7-3$
+ \item $-5+1-7-3$
+ \item $5+1+7+3$
+\end{enumerate}
+\end{multicols}
+\end{enumerate}
+
+\section*{Θεωρία - Μεταβολή ενός μεγέθους\hfill \small{}}
+Για να βρούμε πόσο μεταβλήθηκε ένα μέγεθος, αφαιρούμε από την τελική τιμή του μεγέθους την αρχική τιμή.\\
+Δηλαδή Μεταβολή=Τελική τιμή - Αρχική τιμή
+\begin{itemize}
+ \item \textbf{Αν} η μεταβολή είναι θετικός αριθμός  \textbf{τότε} το μέγεθος αυξήθηκε.
+ \item \textbf{Αν} η μεταβολή είναι αρνητικός αριθμός  \textbf{τότε} το μέγεθος μειώθηκε.
+ \item \textbf{Αν} η μεταβολή ισούται με μηδέν  \textbf{τότε} το μέγεθος δε μεταβλήθηκε.\\ \\
+       \textbf{Παράδειγμα}\\ Ο Κώστας στην αρχή του καλοκαιριού είχε ύψος 150cm και στο τέλος του 
+                    καλοκαιριού 152cm. Πόσο μεταβλήθηκε το ύψος του;\\
+       Μεταβολή του ύψους=Τελική τιμή - Αρχική τιμή\\
+       Μεταβολή του ύψους=152cm - 150cm\\
+       Μεταβολή του ύψους=2cm\\
+       Άρα το ύψος του Κώστα αυξήθηκε κατά 2cm.\\ \\
+%-----------------------------------------------------------------------------
+        \textbf{Παράδειγμα}\\ Ένα χειμωνιάτικο πρωί η θερμοκρασία σε μία πόλη ήταν -1\textdegree C και το  
+                              μεσημέρι ήταν 5\textdegree C. Πόσο μεταβλήθηκε η θερμοκρασία;\\
+       Μεταβολή της θερμοκρασίας=Τελική τιμή - Αρχική τιμή\\
+       Μεταβολή της θερμοκρασίας=5\textdegree C - (-1\textdegree C)\\
+       Μεταβολή της θερμοκρασίας=5\textdegree C +1\textdegree C\\
+       Μεταβολή της θερμοκρασίας=+6\textdegree C\\
+       Άρα η θερμοκρασία αυξήθηκε κατά 6\textdegree C. \\ \\
+%------------------------------------------------------------------------------------
+\textbf{Παράδειγμα}\\ Η Ειρήνη έφυγε από το σπίτι με 10\texteuro και πήγε στο περίπτερο να αγοράσει παγωτά και 
+                    έδωσε 4\texteuro. Πόσο μεταβλήθηκαν τα χρήματά της;\\
+       Μεταβολή χρημάτων=Τελική τιμή - Αρχική τιμή\\
+       Μεταβολή χρημάτων=4\texteuro - 10\texteuro\\
+       Μεταβολή χρημάτων=-6\texteuro\\
+       Άρα τα χρήματα της Ειρήνης μειώθηκαν κατά 6\texteuro.
+\end{itemize}
+
+\section*{Άσκηση 2  \hfill \small{30 μονάδες}}
+Η Ρηνιώ την πρώτη μέρα του κρυολογήματός της είχε (πυρετό) θερμοκρασία 39\textdegree C και τη δεύτερη μέρα είχε 37\textdegree C. 
+Πόσο μεταβλήθηκε η θερμοκρασία της;
+
+
+
+\section*{Άσκηση 3 \hfill \small{40 μονάδες}}
+Να συμπληρώσετε τον παρακάτω πίνακα
+\begin{center}
+ \begin{tabular}{|c|c|c|c|}\hline 
+   \textbf{α}    & \textbf{β} &         \textbf{α+β}  & \textbf{α-β}            \\
+\hline 
+   +3& +10 &     &           \\
+\hline 
+  +5 & -17 &     &           \\
+\hline 
++3&        & +20 &           \\
+\hline 
+-10&   &0  &    \\
+\hline
+\end{tabular}
+\end{center}
+
+
+
+
+
+
+\end{document}
