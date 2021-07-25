@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Α Λυκείου
+title: Γ Λυκείου
 description: Μαθηματικα 
 #image: assets/images/pic06.jpg
 ---
